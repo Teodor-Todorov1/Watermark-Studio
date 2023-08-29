@@ -9,7 +9,8 @@ from flask import Blueprint, flash, redirect, render_template, request, session,
 registration_bp = Blueprint(
     'registration_bp', __name__,
     template_folder='templates',
-    static_folder='static'
+    static_folder='static',
+    static_url_path='/register/static/'
 )
 
 

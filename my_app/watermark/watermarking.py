@@ -13,7 +13,8 @@ rsc = RSCodec(5)  # 5 ecc symbols
 watermarking_bp = Blueprint(
     'watermarking_bp', __name__,
     template_folder='templates',
-    static_folder='static'
+    static_folder='static',
+    static_url_path='/watermark/static/'
 )
 
 @watermarking_bp.route('/watermark')
