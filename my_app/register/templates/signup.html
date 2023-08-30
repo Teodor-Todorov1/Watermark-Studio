@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Pyrebase-Flask-Login</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('.static', filename='register.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename='register.css') }}">
 </head>
 <body>
 <div class="wrapper fadeInDown">
@@ -13,7 +13,7 @@
 
     <!-- Icon -->
     <div class="fadeIn first">
-      <img src="{{ url_for('.static', filename = 'user.png') }}" id="icon" alt="User Icon" />
+      <img src="{{ url_for('registration_bp.static', filename = 'user.png') }}" id="icon" alt="User Icon" />
     </div>
 
     <!-- Login Form -->
