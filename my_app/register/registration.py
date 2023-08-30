@@ -2,7 +2,7 @@
 
 import pyrebase
 from flask import Blueprint, flash, redirect, render_template, request, session, url_for
-
+from flask_session import Session
 
 
 # Defining a blueprint
@@ -29,9 +29,8 @@ firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 db = firebase.database()
 
-person = {"is_logged_in": False, "name": "", "email": "", "uid": ""}
 
-@registration_bp.route("/")
+@registration_bp.route("/signup")
 def signup():
     return render_template("signup.html")
 
@@ -39,10 +38,14 @@ def signup():
 def login():
     return render_template("login.html")
 
-@registration_bp.route("/welcome")
+@registration_bp.route("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for('registration_bp.login'))
+@registration_bp.route("/")
 def welcome():
-    if person["is_logged_in"]:
-        return render_template("index.html", email=person["email"], name=person["name"])
+    if session.get("is_logged_in"):
+        return render_template("index.html", email=session["email"], name=session["name"])
     else:
         return redirect(url_for('registration_bp.login'))
 
@@ -54,17 +57,16 @@ def result():
         password = result["pass"]
         try:
             user = auth.sign_in_with_email_and_password(email, password)
-            global person
-            person["is_logged_in"] = True
-            person["email"] = user["email"]
-            person["uid"] = user["localId"]
+            session["is_logged_in"] = True
+            session["email"] = user["email"]
+            session["uid"] = user["localId"]
             data = db.child("users").get()
-            person["name"] = data.val()[person["uid"]]["name"]
+            session["name"] = data.val()[session["uid"]]["name"]
             return redirect(url_for('registration_bp.welcome'))
         except Exception as err:
             return redirect(url_for('registration_bp.login'))
     else:
-        if person["is_logged_in"]:
+        if session["is_logged_in"]:
             return redirect(url_for('registration_bp.welcome'))
         else:
             return redirect(url_for('registration_bp.login'))
@@ -79,19 +81,18 @@ def register():
         try:
             auth.create_user_with_email_and_password(email, password)
             user = auth.sign_in_with_email_and_password(email, password)
-            global person
-            person["is_logged_in"] = True
-            person["email"] = user["email"]
-            person["uid"] = user["localId"]
-            person["name"] = name
+            session["is_logged_in"] = True
+            session["email"] = user["email"]
+            session["uid"] = user["localId"]
+            session["name"] = name
             data = {"name": name, "email": email}
-            db.child("users").child(person["uid"]).set(data)
+            db.child("users").child(session["uid"]).set(data)
             return redirect(url_for('registration_bp.welcome'))
         except Exception as err:
             return redirect(url_for('registration_bp.register'))
 
     else:
-        if person["is_logged_in"]:
+        if session["is_logged_in"]:
             return redirect(url_for('registration_bp.welcome'))
         else:
             return redirect(url_for('registration_bp.register'))

@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/WMproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WMproject.iml" afterDir="false" />
+    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="Fixed registration css">
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/core.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/core.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/register/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/registration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/register/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/register/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/templates/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/watermark/watermarking.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/watermarking.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +23,40 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Teodor-Todorov1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="069e476e-9708-4768-873e-a91a2ff0af6b" />
+        <option name="url" value="https://github.com/Teodor-Todorov1/WMproject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -36,31 +67,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/WMproject/app.py&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Projects/WMproject/my_app/__init__.py",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\WMproject\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\WMproject\my_app\core\templates" />
       <recent name="C:\Projects\WMproject\my_app\register\templates" />
       <recent name="C:\Projects\WMproject\templates" />
       <recent name="C:\Projects\WMproject\register" />
       <recent name="C:\Projects\WMproject\watermark" />
-      <recent name="C:\Projects\WMproject" />
     </key>
   </component>
   <component name="RunManager" selected="Flask server.WMproject">
@@ -89,12 +121,13 @@
     </configuration>
     <configuration name="WMproject" type="Python.FlaskServer">
       <module name="WMproject" />
-      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="target" value="C:\Projects\WMproject\my_app\__init__.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="SDK_HOME" value="C:\Users\User\AppData\Local\Programs\Python\Python311\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -102,6 +135,10 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Flask server.WMproject" />
+      <item itemvalue="Python.WMproject" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -113,14 +150,50 @@
       <updated>1693217767613</updated>
       <workItem from="1693217768673" duration="3195000" />
       <workItem from="1693228265985" duration="10100000" />
-      <workItem from="1693320596772" duration="1698000" />
+      <workItem from="1693320596772" duration="2003000" />
+      <workItem from="1693335542076" duration="2512000" />
+      <workItem from="1693378563626" duration="2721000" />
+      <workItem from="1693392083019" duration="119000" />
+      <workItem from="1693392226899" duration="5324000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed registration css">
+      <option name="closed" value="true" />
+      <created>1693322478868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693322478868</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed registration css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed registration css" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Python.FlaskServer">
+        <watch expression="err" />
+        <watch expression="session" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1693322215189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1693404641507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
