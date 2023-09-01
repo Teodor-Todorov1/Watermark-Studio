@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pyrebase-Flask-Login</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" type="text/css" href="../static/register.css" />
+  </head>
+  <body>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active">Sign In</h2>
+        
+
+        <a href="signup.html"><h2 class="inactive underlineHover">Sign Up</h2></a>
+        
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img
+            src="../static/user.png"
+            id="icon"
+            alt="User Icon"
+            style="display: unset;"
+          />
+        </div>
+
+        <label for="avatar">Choose a profile picture: (Allowed formats: jpeg, png)</label><br />
+        <input class="imgInput" type="file" name="avatar" accept="image/png, image/jpeg" required/>
+
+        <!-- Login Form -->
+        <form action="http://127.0.0.1:5000/login" method="POST">
+          <input
+            type="text"
+            id="name"
+            class="fadeIn second"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            id="login"
+            class="fadeIn second"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            class="fadeIn third"
+            name="pass"
+            placeholder="Password"
+            required
+          />
+          <input type="submit" class="fadeIn fourth" value="Log In" />
+        </form>
+      </div>
+    </div>
+
+      <div class="grid">
+        <div class="item">
+          <img src="../images/astronomy-1866822_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/lizard-8091302_640.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/ice-7660302_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/milky-way-8153503_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/mountain-8162918_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/mountain-8117525_1280.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/bird-8175276_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/ocean-3605547_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/cairn-8195026_1280.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/flower-7878054_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/building-102840_1280.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/pirate-ship-1719396_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/green-sea-turtle-8199770_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/wolves-1341881_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/lifeguard-tower-8173913_1280.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/architecture-7857833_1280.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/boat-8163905_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/angkor-thom-8096092_1920.png" alt="IMG" />
+        </div>
+        <div class="item">
+          <img src="../images/ship-7833921_1920.png" alt="IMG" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

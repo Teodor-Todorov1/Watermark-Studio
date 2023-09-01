@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Dark Background</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" type="text/css" href="../static/core.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Neon Dark Background</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="submenu">
+          <a href="#">Services</a>
+          <ul>
+            <li><a href="http://127.0.0.1:5000/watermark">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        {% if session.is_logged_in %}
+        <li><a href="{{ url_for('registration_bp.logout') }}">Logout</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+    <main>
+      <p>This is the main content of the page.</p>
+    </main>
+  </body>
+</html>
