@@ -1,9 +1,9 @@
-from flask import Flask, request, jsonify, Blueprint
 from PIL import Image
 import base64
 import io
 import random
 from reedsolo import RSCodec, ReedSolomonError
+from flask import Blueprint, flash, redirect, render_template, request, session, url_for, Flask, jsonify, send_file
 
 
 rsc = RSCodec(5)  # 5 ecc symbols
@@ -19,21 +19,8 @@ watermarking_bp = Blueprint(
 
 @watermarking_bp.route('/watermark')
 def index():
-    return '''Server Works!<hr>
-<form action="/processing" method="POST" enctype="multipart/form-data">
-WM text: <input type="text" name="wm_text">
-WM password: <input type="password" name="wm_pass">
-<input type="file" name="image">
-<button>OK</button>
-</form>    
-<hr>
-<form action="/processingBack" method="POST" enctype="multipart/form-data">
-WM length: <input type="text" name="wm_len">
-WM password: <input type="password" name="wm_pass">
-<input type="file" name="image">
-<button>OK</button>
-</form>    
-'''
+    return render_template("watermarking.html")
+
 
 
 def generateWMPositions(rows, columns):
@@ -153,19 +140,31 @@ def process():
     buffer.seek(0)
     data = buffer.read()
     data = base64.b64encode(data).decode()
-	# return jsonify({
-    #            'msg': 'success', 
-    #            'size': [img.width, img.height], 
+    # return jsonify({
+    #            'msg': 'success',
+    #            'size': [img.width, img.height],
     #            'format': img.format,
     #            'img': data
     #       })
 
-    return f'<img src="data:image/png;base64,{data}">'
+    #with io.BytesIO() as buffer:
+    #    img.save(buffer, 'png')
+    #    buffer.seek(0)
+    #    temp_image_path = 'temp_image.png'
+    #    with open(temp_image_path, 'wb') as temp_file:
+    #        temp_file.write(buffer.read())
+
+    return render_template('download.html', img_data=data)
+
+
+@watermarking_bp.route('/download/<filename>')
+def download(filename):
+    return send_file(filename, as_attachment=True)
 
 
 @watermarking_bp.route('/processingBack', methods=['POST'])
 def processBack():
-    file = request.files['image']
+    file = request.files['image_back']
     wm_len = int(request.form['wm_len'])
     extracted_bin = []
     i = 0
@@ -174,7 +173,7 @@ def processBack():
     with Image.open(file.stream) as img:
         width, height = img.size
         byte = []
-        random.seed(request.form['wm_pass'])  # set the seed
+        random.seed(request.form['wm_pass_back'])  # set the seed
         width, height = img.size
         lstX = list(range(width))
         lstY = list(range(height))
