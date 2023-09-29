@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename = 'core.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename = 'media.css') }}">
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="submenu">
+          <a href="#">Services</a>
+          <ul>
+            <li><a href="/watermark">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        {% if session.is_logged_in %}
+        <li><a href="{{ url_for('registration_bp.logout') }}">Logout</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+    <main>
+      <!-- Description -->
+
+      <div id="desc">
+        <h2 class="title">Unleash the Power of Invisible Watermarking</h2>
+        <h4 class="subtitle">Protect Your Images with the Invisible Shield</h4>
+
+        <p class="text">
+          Are you ready to take your image protection to the next level? Feel
+          the power of invisible watermarking with (Company Name). Preserve your
+          visual assets, secure your brand, and deter unauthorized use like
+          never before.
+        </p>
+
+        <br />
+
+        <h2 class="title">Why Choose Invisible Watermarking?</h2>
+        <br />
+        <ol type="I" class="text ol">
+          <li>
+            Invincible Protection: Our cutting-edge technology embeds invisible
+            watermarks within your images, making them virtually tamper-proof.
+            Your images remain pristine while your rights stay safeguarded.
+          </li>
+          <li>
+            Stealth Branding: Keep your brand intact without compromising
+            aesthetics. Your invisible watermark remains hidden, yet it speaks
+            volumes about your ownership.
+          </li>
+          <li>
+            Zero Distraction: Unlike traditional watermarks, invisible
+            watermarks don't interfere with the visual impact of your images.
+            They're there when you need them, and invisible when you don't.
+          </li>
+          <li>
+            Copyright Assurance: Rest easy knowing that your creative works are
+            fortified against copyright infringement. Your invisible mark is
+            your silent guardian.
+          </li>
+          <li>
+            Brand Recognition: As your images spread across the web, your hidden
+            watermark travels with them, reinforcing your brand identity with
+            every view.
+          </li>
+        </ol>
+
+        <h2 class="title">Experience the Power</h2>
+        <ol class="text ol" type="I">
+          <li>
+            <strong>Embed Securely: </strong>
+            Upload your images and embed invisible watermarks with the utmost
+            security. Our state-of-the-art algorithms ensure that your mark is
+            seamlessly integrated, leaving no trace of interference.
+          </li>
+          <li>
+            <strong>Customized Stealth: </strong>
+            Tailor your invisible watermark to your precise needs. Customize the
+            level of invisibility and choose the data to include, such as your
+            logo, copyright information, or unique identifier.
+          </li>
+          <li>
+            <strong>Track and Trace: </strong>
+            Empower yourself with the ability to track your images online. Our
+            watermarking solution allows you to trace the usage of your images
+            across the internet, giving you unprecedented control.
+          </li>
+          <li>
+            <strong>Effortless Integration: </strong>
+            Seamlessly integrate our invisible watermarking technology into your
+            existing workflow. Whether you're a photographer, content creator,
+            or business owner, our tool is designed to fit your needs.
+          </li>
+        </ol>
+
+        <h2 class="title">Feel the Power, Protect Your Legacy</h2>
+        <p class="text">
+          Your images are more than just pixels; they're a part of your legacy.
+          With (Company name)'s invisible watermarking, you're not just
+          protecting images; you're securing your creative heritage.
+        </p>
+
+        <br />
+        <br />
+
+        <h4 class="text">
+          Unleash the invisible power of protection with (Company name).
+        </h4>
+
+        <br />
+        <button class="btn">Get Started</button>
+        <br />
+        <br />
+
+        <h4 class="text">Experience the Unseen</h4>
+      </div>
+
+      <!-- Background dots -->
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+      <div class="dot3"></div>
+      <div class="dot4"></div>
+      <div class="dot5"></div>
+    </main>
+  </body>
+</html>

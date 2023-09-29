@@ -4,14 +4,83 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="Fixed templates connection bug">
-      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/watermarking.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/watermark/templates/download.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_app/watermark/templates/watermarking.html" afterDir="false" />
+    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="Added needed files">
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/Poppins-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/templates/core.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/angkor-thom-8096092_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/architecture-7857833_1280.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/astronomy-1866822_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/bird-8175276_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/boat-8163905_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/building-102840_1280.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/cairn-8195026_1280.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/flower-7878054_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/green-sea-turtle-8199770_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/ice-7660302_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/lifeguard-tower-8173913_1280.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/lizard-8091302_640.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/milky-way-8153503_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/mountain-8117525_1280.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/mountain-8162918_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/ocean-3605547_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/pirate-ship-1719396_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/ship-7833921_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/images/wolves-1341881_1920.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/register/static/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/ecc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/wm_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/core/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/register/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/register/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/07877232dd0e000227980ebe647e88ba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/0e57cbf5bcc3599f0c7dc661a112e4eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/17c11f584491b966b82e6ed9ec293449" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/2bc9c646361c15ae14bd488e4973d1a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/2f82150a836b3f1d20afab94a36c845a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/3e9ca8943802c52dfd37187165fe022f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/46d96ec2273eb93bd6018ca5386b1df7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/47b56500e8f1da0ee7fc1053285ce34f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/50d3f4912cdaabf700149edc8a7aa57b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/5218791bdd0968470b3c01f9fb8c086f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/723bfdc6e9f1982b46089f7cf26e0f3b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/72cdaac86b3924a0611fabc0bbb02459" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/78e4112d5b806d2c53abe4992506a4c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/7be2aaf050b13dfa047f680b5881ec61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/7f4a2d4cdf335b43ebb7fb1b5f0a01c1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/9e5b5f78711d3d936e93ebf446c522b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/a37ed6aa666b05cbdbb5eaabf2d71d81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/ab31ec103a66fb17596648ab46cc07d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/c7a23126658f230406486f037787d1cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/c9a7bce6278d11bddb08b9891a3e02f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/e8cb1f0984c0c54a2828484db2e78d86" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/f5bea8b0986e919a5b79b72aaa57e204" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/core.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/registration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/watermarking.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/watermarking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/watermark/watermarking.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/watermarking.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +109,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="added_files" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -76,7 +150,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/WMproject/my_app/__init__.py&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/WMproject - Copy&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -88,14 +162,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\WMproject\my_app\" />
+      <recent name="C:\Projects\WMproject\my_app\core\templates" />
       <recent name="C:\Projects\WMproject\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\WMproject\my_app\watermark" />
+      <recent name="C:\Projects\WMproject\my_app\register\static\images" />
+      <recent name="C:\Projects\WMproject\my_app\register\static" />
       <recent name="C:\Projects\WMproject\my_app\core\templates" />
       <recent name="C:\Projects\WMproject\my_app\register\templates" />
-      <recent name="C:\Projects\WMproject\templates" />
-      <recent name="C:\Projects\WMproject\register" />
-      <recent name="C:\Projects\WMproject\watermark" />
     </key>
   </component>
   <component name="RunManager" selected="Flask server.WMproject">
@@ -169,6 +245,15 @@
       <workItem from="1694333735891" duration="678000" />
       <workItem from="1694350654269" duration="6512000" />
       <workItem from="1694507171502" duration="282000" />
+      <workItem from="1694530168869" duration="2096000" />
+      <workItem from="1694532933541" duration="194000" />
+      <workItem from="1695052954025" duration="2461000" />
+      <workItem from="1695577412383" duration="1295000" />
+      <workItem from="1695579259048" duration="819000" />
+      <workItem from="1695658490036" duration="213000" />
+      <workItem from="1695829690551" duration="2140000" />
+      <workItem from="1695919322997" duration="8880000" />
+      <workItem from="1695960109694" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed registration css">
       <option name="closed" value="true" />
@@ -202,7 +287,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693407158345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added styling and download functionality">
+      <option name="closed" value="true" />
+      <created>1694530510295</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694530510295</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added needed files">
+      <option name="closed" value="true" />
+      <created>1694531983278</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694531983279</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +320,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -235,9 +336,20 @@
     <MESSAGE value="Fixed registration css" />
     <MESSAGE value="Added session and logout" />
     <MESSAGE value="Fixed templates connection bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed templates connection bug" />
+    <MESSAGE value="Added styling and download functionality" />
+    <MESSAGE value="Added needed files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added needed files" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/my_app/watermark/wm_class.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.FlaskServer">
         <watch expression="err" />
@@ -246,6 +358,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1694499379289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1695960468736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

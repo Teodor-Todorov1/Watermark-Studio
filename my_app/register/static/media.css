@@ -1,0 +1,13 @@
+@media screen and (max-height: 800px) {
+  .wrapper {
+    scale: 0.6;
+    top: 0%;
+  }
+}
+
+@media screen and (min-height: 1400px) {
+  .wrapper {
+    scale: 1.2;
+    top: 20%;
+  }
+}
