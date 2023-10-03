@@ -1,34 +1,150 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Pyrebase-Flask-Login</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename = 'register.css') }}">
-</head>
-<body>
-<div class="wrapper fadeInDown">
-  <div id="formContent">
-    <!-- Tabs Titles -->
-    <h2 class="active"> Sign In </h2>
-    <a href="/signup"><h2 class="inactive underlineHover">Sign Up </h2></a>
+  <head>
+    <title>Pyrebase-Flask-Login</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=0.5"
+    />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename='reset.css') }}">
+     <link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename='register.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename='login.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename='media.css') }}">
+  </head>
+  <body>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active">Sign In</h2>
+        <a href="/signup"><h2 class="inactive underlineHover">Sign Up</h2></a>
 
-    <!-- Icon -->
-    <div class="fadeIn first">
-      <img src="{{ url_for('registration_bp.static', filename = 'user.png') }}" id="icon" alt="User Icon" />
-    </div>
+        <!-- Icon -->
+        <div class="fadeIn first">
+          <img src="{{ url_for('registration_bp.static', filename = 'user.png') }}" id="icon" alt="User Icon" />
+        </div>
 
-    <!-- Login Form -->
-    <form action="/result" method="POST">
-      <input type="email" id="login" class="fadeIn second" name="email" placeholder="email">
-      <input type="password" id="password" class="fadeIn third" name="pass" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
-    </form>
-<!-- 
+        <!-- Login Form -->
+        <form action="/result" method="POST">
+          <input
+            type="email"
+            id="login"
+            class="fadeIn second"
+            name="email"
+            placeholder="email"
+          />
+          <input
+            type="password"
+            id="password"
+            class="fadeIn third"
+            name="pass"
+            placeholder="password"
+          />
+          <input type="submit" class="fadeIn fourth submitBTN" value="Log In" />
+        </form>
+        <!--
 	Will add in future
     <div id="formFooter">
       <a class="underlineHover" href="#">Forgot Password?</a>
     </div>
  -->
-  </div>
-</div>
-</body>
+      </div>
+    </div>
+      <div class="grid">
+           <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/autumn.jpg') }}" class="icon" alt="IMG" />
+        </div>
+          <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/leaf.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/palms.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/sunRise.jpg') }}" class="icon" alt="IMG" />
+        </div>
+          <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/road.jpg') }}" class="icon" alt="IMG" />
+        </div>
+          <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/clouds.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/dolphins.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/house.jpg') }}" class="icon" alt="IMG" />
+        </div>
+          <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/leaves.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/snowForest.jpg') }}" class="icon" alt="IMG" />
+        </div>
+          <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/seaShore.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/forest.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/birds.jpg') }}" class="icon" alt="IMG" />
+        </div>
+          <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/seeImage.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/lizard-8091302_640.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/milky-way-8153503_1920.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/mountain-8162918_1920.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/mountain-8117525_1280.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/bird-8175276_1920.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/ocean-3605547_1920.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/building-102840_1280.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/pirate-ship-1719396_1920.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/wolves-1341881_1920.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/lifeguard-tower-8173913_1280.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/architecture-7857833_1280.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/boat-8163905_1920.png') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/ship-7833921_1920.png') }}" class="icon" alt="IMG" />
+        </div>
+                 <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/upCloseLeaf.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/palms.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/river.jpg') }}" class="icon" alt="IMG" />
+        </div>
+        <div class="item">
+            <img src="{{ url_for('registration_bp.static', filename='images/snowy.jpg') }}" class="icon" alt="IMG" />
+        </div>
+
+      </div>
+    </div>
+  </body>
 </html>
