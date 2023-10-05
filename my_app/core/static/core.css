@@ -1,6 +1,6 @@
 @font-face {
   font-family: Poppins;
-  src: url(Poppins/Poppins-Bold.ttf);
+  src: url(Poppins-Bold.ttf);
 }
 
 *,
@@ -14,6 +14,10 @@ html {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,57 +29,82 @@ body {
   justify-content: center;
   align-items: center;
 }
-nav {
-  background-color: #444;
-  padding: 10px;
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-nav ul li:last-child {
-  margin-right: 0;
-}
-.submenu {
-  position: relative;
-}
-.submenu ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #555;
-  padding: 10px;
-  list-style: none;
-}
-.submenu:hover ul {
-  display: block;
-}
 
 /* Navigation */
 
-.nav {
-  box-shadow: 0px 5px 10px 0px rgba(0, 255, 255, 0.7);
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  width: 100%;
+  box-shadow: 0px 0px 0px 0px rgba(0, 255, 255, 0.7);
   transition: all 200ms ease;
-  width: 95vw;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.nav:hover {
+.navbar:hover {
   box-shadow: 0px 10px 20px 2px rgba(0, 255, 255, 0.7);
+}
+
+.navbar {
+  .createbtn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 126px;
+    height: 45px;
+    color: #bcbcbc;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    &.selectedbtn {
+      border: 1px solid #d7d7d7;
+      border-radius: 10px;
+    }
+  }
+  .navlogo {
+    height: 100%;
+    background: linear-gradient(93.51deg, #9b51e0 4%, #3081ed 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .navlogo:hover {
+    cursor: pointer;
+  }
+
+  .navlink {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #bcbcbc;
+    &.selectedlink {
+      background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-bottom: 1.5px solid #9b51e0;
+    }
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
 }
 
 /* Description */
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -118,6 +147,145 @@ main {
   text-align: start;
 }
 
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-shrink: 2;
+  white-space: initial;
+  margin: 50px;
+}
+
+.infobox {
+  animation-name: leftslide;
+  animation-duration: 0.8s;
+  max-height: 500px;
+  max-width: 50%;
+}
+
+.selected {
+  background-image: linear-gradient(
+    to right,
+    #52009e,
+    #9b51e0,
+    rgba(48, 129, 237, 0.8),
+    #00f300,
+    #d9ff00b6
+  );
+  background-size: 300%;
+}
+
+.selected:hover {
+  animation-name: selectedRotateAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.display {
+  animation-name: rightslide;
+  animation-duration: 0.8s;
+  rotate: 4deg;
+  padding: 14px;
+  border: 1px solid;
+  border-radius: 35px;
+  max-height: 450px;
+  max-width: 50%;
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  object-fit: fill;
+}
+
+.infobox-createbtn,
+.infobox-explorebtn {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  padding: 8px 38px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.infobox-createbtn {
+  margin-right: 20px;
+  background-color: transparent;
+  border: 1px solid #d7d7d7;
+}
+
+.infobox-explorebtn {
+  background-color: #009bf5af;
+}
+
+.infobox-btnwrapper {
+  display: flex;
+}
+
+.started {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  scale: 1.5;
+}
+
+.started-items::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 80px;
+  filter: blur(80px);
+  background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+}
+
+.started-items {
+  padding: 60px 80px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: space-between;
+}
+
+.itemwrapper p {
+  width: 100px;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  margin-right: 50px;
+}
+.started-items-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 18px;
+  background-color: red;
+  background: rgba(255, 255, 255, 0.095);
+  box-shadow: inset 2.01px -2.01px 20px rgba(214, 214, 214, 0.17),
+    inset -3.01333px 3.01333px 3.01333px rgba(255, 255, 255, 0.39);
+  backdrop-filter: blur(74.4293px);
+}
+
+.started-items-item * {
+  scale: 2;
+  color: #000118;
+  --fa-animation-duration: 2s;
+}
+
 /* Background */
 
 .dot1,
@@ -127,7 +295,7 @@ main {
 .dot5 {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: -100;
   animation-iteration-count: infinite;
 }
 
@@ -341,5 +509,37 @@ html {
     height: 100px;
     filter: blur(40px);
     background-color: #00eeff;
+  }
+}
+
+@keyframes leftslide {
+  from {
+    transform: translateX(-700px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rightslide {
+  from {
+    transform: translateX(550px);
+    rotate: -10deg;
+  }
+  to {
+    transform: translateX(0px);
+    rotate: 4deg;
+  }
+}
+
+@keyframes selectedRotateAnimation {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
   }
 }

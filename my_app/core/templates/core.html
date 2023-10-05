@@ -4,44 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Core</title>
-     <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename = 'core.css') }}">
-     <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename = 'media.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='core.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='media.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
   <body>
-    <nav class="nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li class="submenu">
-          <a href="#">Services</a>
-          <ul>
-            <li><a href="/watermark">Service 1</a></li>
-            <li><a href="#">Service 2</a></li>
-            <li><a href="#">Service 3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        {% if session.is_logged_in %}
-        <li><a href="{{ url_for('registration_bp.logout') }}">Logout</a></li>
-        {% endif %}
-      </ul>
+    <nav class="navbar">
+      <a class="navlogo">Our Company</a>
+      <div class="navlinkwrap">
+        <a href="#" class="navlink selectedlink">Home</a>
+        <a href="#" class="navlink">My Profile</a>
+        <a href="#" class="navlink">About</a>
+        <a href="#" class="navlink">Contact us</a>
+      </div>
+      <div class="buttonwrap">
+        <button class="createbtn selectedbtn"><a href="/watermark" style="color: white">CREATE</a></button>
+        <button class="createbtn">
+          <a href="{{ url_for('registration_bp.logout') }}" class="createbtn"
+            >Logout</a
+          >
+        </button>
+      </div>
     </nav>
     <main>
+      <div class="box">
+        <div class="infobox">
+          <p class="title low">
+            Unleash the Power of Invisible Watermarking! 
+            Protect Your Images
+            with the Invisible Shield
+          </p>
+          <p class="subtitle lows">
+            Are you ready to take your image protection to the next level? Feel
+            the power of invisible watermarking with (Company Name). Preserve
+            your visual assets, secure your brand, and deter unauthorized use
+            like never before.
+          </p>
+          <div class="infobox-btnwrapper">
+            <button class="infobox-createbtn selected"><a href="/watermark" style="color: white">Create</a></button>
+            <button class="infobox-explorebtn">Explore</button>
+          </div>
+        </div>
+        <div class="display"><img src="#" alt="Logo IMG"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="started">
+        <p class="title" style="align-self: center;">Experience the Power</p>
+        <div class="started-items">
+          <div class="itemwrapper">
+            <div class="started-items-item"><i class="fa-solid fa-shield fa-beat-fade"></i></div>
+            <p>Embed Securely</p>
+          </div>
+          <div class="itemwrapper">
+            <div class="started-items-item"><i class="fa-solid fa-user-ninja fa-fade"></i></div>
+            <p>Customized Stealth</p>
+          </div>
+          <div class="itemwrapper">
+            <div class="started-items-item"><i class="fa-regular fa-compass fa-flip"></i></div>
+            <p>Track and Trace</p>
+          </div>
+          <div class="itemwrapper">
+            <div class="started-items-item"><i class="fa-solid fa-check fa-shake"></i></div>
+            <p>Effortless Integration</p>
+          </div>
+        </div>
+      </div>
+
       <!-- Description -->
 
       <div id="desc">
-        <h2 class="title">Unleash the Power of Invisible Watermarking</h2>
-        <h4 class="subtitle">Protect Your Images with the Invisible Shield</h4>
-
-        <p class="text">
-          Are you ready to take your image protection to the next level? Feel
-          the power of invisible watermarking with (Company Name). Preserve your
-          visual assets, secure your brand, and deter unauthorized use like
-          never before.
-        </p>
-
-        <br />
-
         <h2 class="title">Why Choose Invisible Watermarking?</h2>
         <br />
         <ol type="I" class="text ol">
