@@ -32,3 +32,43 @@
     margin-top: -300px;
   }
 }
+
+@media only screen and ((min-width: 2000px) or (min-height: 1250px)) {
+  .box {
+    scale: 1.15;
+    margin-top: 250px;
+    margin-bottom: 250px;
+  }
+
+  .infobox {
+    position: relative;
+    left: 15%;
+  }
+
+  .started {
+    margin-top: 300px;
+    scale: 1.5;
+  }
+
+  .title {
+    font-size: 4em;
+  }
+
+  .subtitle {
+    font-size: 2em;
+  }
+
+  .infobox-createbtn,
+  .infobox-explorebtn {
+    scale: 1.4;
+  }
+
+  .infobox-createbtn {
+    margin-right: 75px;
+  }
+
+  .display {
+    width: 750px;
+    height: 750px;
+  }
+}

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="Visual improvement in registration">
+    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="Visual improvement in core">
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/images/Splash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/core/static/windowInteractions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/07877232dd0e000227980ebe647e88ba" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/0e57cbf5bcc3599f0c7dc661a112e4eb" beforeDir="false" />
@@ -29,6 +31,11 @@
       <change beforePath="$PROJECT_DIR$/flask_session/c9a7bce6278d11bddb08b9891a3e02f3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/e8cb1f0984c0c54a2828484db2e78d86" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/f5bea8b0986e919a5b79b72aaa57e204" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/Poppins/OFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/Poppins/OFL.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/core.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/templates/core.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/templates/core.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/watermarking.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/watermarking.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,38 +96,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/WMproject/my_app/watermark/static&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Confirmation&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Projects/WMproject/my_app",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\WMproject\my_app" />
+      <recent name="C:\Projects\WMproject" />
       <recent name="C:\Projects\WMproject\my_app\watermark\static" />
       <recent name="C:\Projects\WMproject\my_app\watermark\templates" />
       <recent name="C:\Projects\WMproject\my_app\register\static" />
-      <recent name="C:\Projects\WMproject\my_app\register\templates" />
-      <recent name="C:\Projects\WMproject\my_app\register" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\WMproject\my_app\core\static" />
+      <recent name="C:\Projects\WMproject\my_app\core" />
+      <recent name="C:\Projects\WMproject\my_app" />
+      <recent name="C:\Projects\WMproject" />
       <recent name="C:\Projects\WMproject\my_app\watermark\testWaterMark" />
-      <recent name="C:\Projects\WMproject\my_app\register\static\images" />
-      <recent name="C:\Projects\WMproject\my_app\register\static" />
-      <recent name="C:\Projects\WMproject\my_app\register" />
-      <recent name="C:\Projects\WMproject\my_app\register\" />
     </key>
   </component>
   <component name="RunManager" selected="Flask server.WMproject">
@@ -209,6 +216,13 @@
       <workItem from="1696261732071" duration="319000" />
       <workItem from="1696350309319" duration="5145000" />
       <workItem from="1696424988491" duration="3600000" />
+      <workItem from="1696519122132" duration="3107000" />
+      <workItem from="1696565080536" duration="177000" />
+      <workItem from="1696700139044" duration="378000" />
+      <workItem from="1696952078252" duration="1814000" />
+      <workItem from="1696954206101" duration="95000" />
+      <workItem from="1696996837353" duration="347000" />
+      <workItem from="1697123221012" duration="2713000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed registration css">
       <option name="closed" value="true" />
@@ -274,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696355284640</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Visual improvement in core">
+      <option name="closed" value="true" />
+      <created>1696528340868</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696528340868</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +333,8 @@
     <MESSAGE value="Added needed files" />
     <MESSAGE value="Watermarking and visual update" />
     <MESSAGE value="Visual improvement in registration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Visual improvement in registration" />
+    <MESSAGE value="Visual improvement in core" />
+    <option name="LAST_COMMIT_MESSAGE" value="Visual improvement in core" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -331,6 +354,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1696428519319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1697127742699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
