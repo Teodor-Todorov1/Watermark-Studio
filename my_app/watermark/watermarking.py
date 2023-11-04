@@ -67,18 +67,7 @@ def processBack():
 
 @watermarking_bp.route('/imageWatermark')
 def imqgeIndex():
-    return '''Server Works!<hr>
-<form action="/processingImage" method="POST" enctype="multipart/form-data">
-Image1: <input type="file" name="image1">
-Image2: <input type="file" name="image2">
-<button>OK</button>
-</form>
-<hr>
-<form action="/processingImageBack" method="POST" enctype="multipart/form-data">
-Image: <input type="file" name="image">
-<button>OK</button>
-</form>
-'''
+    return  render_template("imageWatermarking.html")
 
 # Encryption function
 @watermarking_bp.route('/processingImage', methods=['POST'])

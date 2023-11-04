@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{{ url_for('watermarking_bp.static', filename = 'watermarking.css') }}">
-    <title>Service 1</title>
+    <title>RSH Mark</title>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('watermarking_bp.static', filename = 'navbar.css') }}">
+
+
 </head>
 <body>
     <header>
-        <h1>Service 1</h1>
+        <nav class="navbar">
+      <a class="navlogo">Our Company</a>
+      <div class="navWrap">
+        <a href="/" class="navlink selectedlink">Home</a>
+        <a href="#" class="navlink">My Profile</a>
+        <a href="#" class="navlink">About</a>
+        <a href="#" class="navlink">Contact us</a>
+      </div>
+      <div class="sidebar">
+
+
+        <button class="createbtn">
+          <a href="{{ url_for('registration_bp.logout') }}" class="createbtn"
+            >Logout</a
+          >
+        </button>
+      </div>
+
+
+    </nav>
     </header>
     <form action="/processing" method="POST" enctype="multipart/form-data">
         <label for="wm_text">WM text:</label>

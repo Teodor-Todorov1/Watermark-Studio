@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MSB Mark</title>
+       <link rel="stylesheet" type="text/css" href="{{ url_for('watermarking_bp.static', filename = 'watermarking.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('watermarking_bp.static', filename = 'navbar.css') }}">
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+      <a class="navlogo">Our Company</a>
+      <div class="navWrap">
+        <a href="/" class="navlink selectedlink">Home</a>
+        <a href="#" class="navlink">My Profile</a>
+        <a href="#" class="navlink">About</a>
+        <a href="#" class="navlink">Contact us</a>
+      </div>
+      <div class="sidebar">
+
+
+        <button class="createbtn">
+          <a href="{{ url_for('registration_bp.logout') }}" class="createbtn"
+            >Logout</a
+          >
+        </button>
+      </div>
+
+
+    </nav>
+    </header>
+<form action="/processingImage" method="POST" enctype="multipart/form-data">
+Image1: <input type="file" name="image1">
+Image2: <input type="file" name="image2">
+<button>OK</button>
+</form>
+<hr>
+<form action="/processingImageBack" method="POST" enctype="multipart/form-data">
+Image: <input type="file" name="image">
+<button>OK</button>
+</form>
+</body>
+</html>
