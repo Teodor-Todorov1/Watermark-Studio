@@ -4,8 +4,8 @@
 
 html {
   background-color: rgba(39, 37, 37, 0.911);
-  margin-top: -700px;
-  padding-top: 20px;
+  margin-top: -44.5rem;
+  padding-top: 1.4rem;
   height: 100vh;
 }
 
@@ -22,11 +22,11 @@ a {
 
 h2 {
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   display: inline-block;
-  margin: 40px 8px 10px 8px;
+  margin: 3rem 0.4rem 0.6rem 0.4rem;
   color: #cccccc;
 }
 
@@ -37,20 +37,20 @@ h2 {
   border-radius: 10px;
   background: #fff;
   width: 90%;
-  max-width: 450px;
+  max-width: 30rem;
   padding: 0px;
-  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
 #formFooter {
   background-color: #f6f6f6;
-  border-top: 1px solid #dce8f1;
-  padding: 25px;
+  border-top: 0.05rem solid #dce8f1;
+  padding: 2rem;
   text-align: center;
-  -webkit-border-radius: 0 0 10px 10px;
-  border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 0.6rem 0.6rem;
+  border-radius: 0 0 0.6rem 0.6rem;
 }
 
 /* TABS */
@@ -61,7 +61,7 @@ h2.inactive {
 
 h2.active {
   color: #0d0d0d;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 0.1rem solid #5fbae9;
 }
 
 /* FORM TYPOGRAPHY*/
@@ -72,18 +72,18 @@ input[type="reset"] {
   background-color: #56baed;
   border: none;
   color: white;
-  padding: 15px 80px;
+  padding: 0.95rem 4rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 0.7rem;
   width: 85%;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
-  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
-  -webkit-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-  margin: 5px 20px 40px 20px;
+  -webkit-box-shadow: 0 0.8rem 2rem 0 rgba(95, 186, 233, 0.4);
+  box-shadow: 0 0.8rem 2rem 0 rgba(95, 186, 233, 0.4);
+  -webkit-border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+  border-radius: 0.4rem 0.4rem 0.4rem 0.4rem;
+  margin: 0.4rem 1.3rem 2.4rem 1.3rem;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -113,12 +113,12 @@ input[type="text"] {
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;
-  padding: 15px 32px;
+  padding: 0.9rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 5px;
+  font-size: 1rem;
+  margin: 0.3rem;
   width: 85%;
   border: 2px solid #f6f6f6;
   -webkit-transition: all 0.5s ease-in-out;
@@ -137,9 +137,9 @@ input[type="text"]:focus {
   border-bottom: 2px solid #5fbae9;
 }
 
-input[type="email"]::placeholder,
-input[type="password"]::placeholder,
-input[type="text"]::placeholder {
+input[type="email"]:placeholder,
+input[type="password"]:placeholder,
+input[type="text"]:placeholder {
   color: #cccccc;
 }
 
@@ -239,7 +239,7 @@ input[type="text"]::placeholder {
   left: 0;
   bottom: -10px;
   width: 0;
-  height: 2px;
+  height: 0.1rem;
   background-color: #56baed;
   content: "";
   transition: width 0.2s;
@@ -273,7 +273,7 @@ input[type="text"]::placeholder {
 /* masonry */
 
 body {
-  margin: 10px;
+  margin: 0.6rem;
 }
 
 .grid {
@@ -281,7 +281,7 @@ body {
   pointer-events: none;
 }
 
-.item + .item {
+.item ~ .item {
   margin-top: 1rem;
 }
 
@@ -317,7 +317,7 @@ html {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
+  padding: 1.3rem;
   position: sticky;
   top: 15%;
 }

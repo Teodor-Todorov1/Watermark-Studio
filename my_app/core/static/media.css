@@ -1,39 +1,18 @@
-@media screen and (max-width: 1900px) {
-  #desc {
-    scale: 0.8;
-    margin-top: -50px;
+@media only screen and ((max-width: 1500px) and (max-height: 900px)) {
+  html {
+    font-size: 13px;
+  }
+
+  .display {
+    right: 5%;
   }
 }
 
-@media screen and (max-width: 1450px) {
-  #desc {
-    scale: 0.7;
-    margin-top: -100px;
+@media only screen and ((min-width: 2000px) and (min-height: 1250px)) {
+  html {
+    font-size: 20px;
   }
-}
 
-@media screen and (max-width: 1300px) {
-  #desc {
-    scale: 0.6;
-    margin-top: -100px;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  #desc {
-    scale: 0.5;
-    margin-top: -200px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  #desc {
-    scale: 0.4;
-    margin-top: -300px;
-  }
-}
-
-@media only screen and ((min-width: 2000px) or (min-height: 1250px)) {
   .box {
     scale: 1.15;
     margin-top: 250px;
@@ -42,7 +21,8 @@
 
   .infobox {
     position: relative;
-    left: 15%;
+    left: 10%;
+    max-width: 40%;
   }
 
   .started {
@@ -51,11 +31,11 @@
   }
 
   .title {
-    font-size: 4em;
+    font-size: 3.5em;
   }
 
   .subtitle {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .infobox-createbtn,
@@ -64,11 +44,100 @@
   }
 
   .infobox-createbtn {
-    margin-right: 75px;
+    margin-top: 20px;
+    margin-left: 75px;
+  }
+
+  .infobox-explorebtn {
+    margin-top: 20px;
+    margin-left: 25px;
   }
 
   .display {
-    width: 750px;
-    height: 750px;
+    width: 650px;
+    height: 650px;
+    right: 10%;
+  }
+}
+
+/* Making Background responsible */
+
+@media only screen and (max-width: 700px) {
+  .dot1 {
+    top: 9.2rem;
+  }
+
+  .dot2 {
+    top: 20rem;
+  }
+
+  .dot3 {
+    top: 50rem;
+  }
+
+  .dot4 {
+    top: 70rem;
+  }
+
+  .dot5 {
+    top: 120rem;
+  }
+
+  @keyframes animateDot2 {
+    0% {
+      top: 20rem;
+    }
+    25% {
+      top: 15rem;
+    }
+    50% {
+      top: 18rem;
+    }
+    75% {
+      top: 15rem;
+    }
+    100% {
+      top: 20rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 6px;
+  }
+
+  .box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .display {
+    margin-top: 5rem;
+    width: 50rem;
+    height: 50rem;
+  }
+
+  .infobox {
+    max-width: 90%;
   }
 }
