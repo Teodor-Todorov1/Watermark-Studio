@@ -4,12 +4,13 @@ from my_app.watermark import util
 from my_app.watermark.ecc import ReedSolomonCodec, HammingCodec
 
 
+
 class WM(object):
 
-    def __init__(self):
+    def __init__(self, wmpass):
         self.hm = HammingCodec()
         self.rs = ReedSolomonCodec()
-        self.password = '123456'
+        self.password = wmpass
         self.wm_len = 85
 
     def generate_wm_positions(self, rows, columns):

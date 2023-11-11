@@ -2,7 +2,7 @@
 
 import pyrebase
 from flask import Blueprint, flash, redirect, render_template, request, session, url_for
-from flask_session import Session
+
 
 
 # Defining a blueprint
@@ -28,6 +28,7 @@ config = {
 firebase = pyrebase.initialize_app(config)
 auth = firebase.auth()
 db = firebase.database()
+
 
 
 @registration_bp.route("/signup")
@@ -61,6 +62,7 @@ def result():
             session["email"] = user["email"]
             session["uid"] = user["localId"]
             data = db.child("users").get()
+            session["wmpass"] = data.val()[session["uid"]]["wmpass"]
             session["name"] = data.val()[session["uid"]]["name"]
             return redirect(url_for('registration_bp.welcome'))
         except Exception as err:
@@ -77,14 +79,16 @@ def register():
         result = request.form
         email = result["email"]
         password = result["pass"]
+        wmpassword = result["wmpass"]
         name = result["name"]
         try:
             auth.create_user_with_email_and_password(email, password)
             user = auth.sign_in_with_email_and_password(email, password)
             session["email"] = user["email"]
             session["uid"] = user["localId"]
+
             session["name"] = name
-            data = {"name": name, "email": email}
+            data = {"name": name, "email": email, "wmpass": wmpassword}
             db.child("users").child(session["uid"]).set(data)
             session["is_logged_in"] = True
             return redirect(url_for('registration_bp.welcome'))

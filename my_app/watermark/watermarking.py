@@ -8,8 +8,9 @@ import cv2
 import numpy as np
 
 from my_app.watermark.wm_class import WM
+from flask import session
 
-wm = WM()
+
 
 # Defining a blueprint
 watermarking_bp = Blueprint(
@@ -27,6 +28,7 @@ def index():
 
 @watermarking_bp.route('/processing', methods=['POST'])
 def process():
+    wm = WM(session.get("wmpass"))
     file = request.files['image']
     with Image.open(file.stream) as img:
         wm.encode(img, request.form['wm_text'])
@@ -59,6 +61,7 @@ def download(filename):
 
 @watermarking_bp.route('/processingBack', methods=['POST'])
 def processBack():
+    wm = WM(session.get("wmpass"))
     file = request.files['image_back']
     with Image.open(file.stream) as img:
         return wm.decode(img)
