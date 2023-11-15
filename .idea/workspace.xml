@@ -4,7 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="front end changes">
+    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="Added dynamic watermark pass">
+      <change afterPath="$PROJECT_DIR$/my_app/register/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Playfair_Display/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/Poppins/Poppins-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/images/WM1.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/images/WM1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/navbar-short-menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_app/watermark/static/windowInteractionsWM.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/07877232dd0e000227980ebe647e88ba" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/0e57cbf5bcc3599f0c7dc661a112e4eb" beforeDir="false" />
@@ -29,9 +70,51 @@
       <change beforePath="$PROJECT_DIR$/flask_session/c9a7bce6278d11bddb08b9891a3e02f3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/e8cb1f0984c0c54a2828484db2e78d86" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/f5bea8b0986e919a5b79b72aaa57e204" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/templates/core.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/templates/core.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/register/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/registration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/imageSelector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/images/img9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/media.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/register.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/static/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/register/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/static/navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/static/watermarking.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/static/watermarking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/imageWatermarking.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/imageWatermarking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/watermarking.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/watermarking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/watermark/watermarking.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/watermarking.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/watermark/wm_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/wm_class.py" afterDir="false" />
     </list>
@@ -44,8 +127,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -97,36 +180,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/WMproject/my_app/core/static&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Projects/WMproject/my_app/watermark",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\WMproject\my_app\watermark" />
+      <recent name="C:\Projects\WMproject\my_app\watermark\templates" />
       <recent name="C:\Projects\WMproject\my_app\core\static" />
       <recent name="C:\Projects\WMproject\my_app\core\static\images" />
       <recent name="C:\Projects\WMproject\my_app\register\static" />
-      <recent name="C:\Projects\WMproject\my_app" />
-      <recent name="C:\Projects\WMproject" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\WMproject\my_app\register" />
       <recent name="C:\Projects\WMproject\my_app\register\static" />
       <recent name="C:\Projects\WMproject\my_app\register\static\images" />
-      <recent name="C:\Projects\WMproject\my_app\register" />
       <recent name="C:\Projects\WMproject\my_app\core\static" />
       <recent name="C:\Projects\WMproject\my_app\core" />
     </key>
@@ -232,7 +315,9 @@
       <workItem from="1699462614481" duration="3860000" />
       <workItem from="1699466815298" duration="1159000" />
       <workItem from="1699471659100" duration="141000" />
-      <workItem from="1699722938031" duration="4719000" />
+      <workItem from="1699722938031" duration="5151000" />
+      <workItem from="1699989953287" duration="3083000" />
+      <workItem from="1700063073192" duration="8512000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed registration css">
       <option name="closed" value="true" />
@@ -330,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699466484399</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added dynamic watermark pass">
+      <option name="closed" value="true" />
+      <created>1699728132193</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699728132193</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,20 +464,16 @@
     <MESSAGE value="2nd type of watermark" />
     <MESSAGE value="navbar in watermark part" />
     <MESSAGE value="front end changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="front end changes" />
+    <MESSAGE value="Added dynamic watermark pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dynamic watermark pass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/my_app/watermark/wm_class.py</url>
-          <line>82</line>
+          <line>83</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/my_app/watermark/watermarking.py</url>
-          <line>32</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -392,10 +481,11 @@
       <configuration name="Python.FlaskServer">
         <watch expression="err" />
         <watch expression="session" />
+        <watch expression="request" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1699727628634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1700074563096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
