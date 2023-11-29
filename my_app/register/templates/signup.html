@@ -3,9 +3,12 @@
   <head>
     <title>Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5" />
-  <link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename='reset.css') }}">
+       <link rel="icon" type="image/x-icon" href="{{ url_for('core_bp.static', filename='images/WM1.ico') }}"/>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='loader.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='reset.css') }}"/>
      <link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename='register.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename='media.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('registration_bp.static', filename='RegisterMedia.css') }}">
+       <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='global.css') }}">
   </head>
   <body>
     <div class="wrapper fadeInDown">
@@ -22,8 +25,9 @@
         </div>
 
 
-        <!-- Login Form -->
+        <!-- SignUp Form -->
         <form class="form" action="/register" method="POST">
+            <div style="color: red">{{error}}</div>
           <div class="textField">
             <div class="input-container">
               <input
@@ -66,7 +70,15 @@
             </div>
           </div>
           <input type="submit" class="submit fadeIn fourth" value="Sign Up" />
-        </form>
+
+           <!-- Google Registration Button -->
+          <div class="google_button_container" style="margin-bottom: 20px">
+            <a href="/login/google" class="google_button submit fadeIn fourth">
+              <img src="{{ url_for('registration_bp.static', filename = 'google_logo.png') }}" alt="google logo">
+                Sign in with Google
+            </a>
+          </div>
+             </form>
       </div>
     </div>
 
@@ -166,7 +178,11 @@
     </div>
 
     </div>
-    </div>
-    <script src="{{ url_for('registration_bp.static', filename='imageSelector.js') }}"></script>
+        <div id="loader" class="lds-hourglass"></div>
+       <script src="{{ url_for('core_bp.static', filename='loading.js') }}"></script>
+       <script src="{{ url_for('registration_bp.static', filename='imageSelector.js') }}"></script>
+
+
   </body>
 </html>
+

@@ -65,21 +65,6 @@ function scrollFunction() {
   }
 }
 
-let createBTN = document.getElementById("dropdown__face");
-let items = document.getElementById("dropdown__items");
-
-createBTN.onclick = function () {
-  if (items.style.opacity === "1") {
-    items.style.visibility = "hidden";
-    items.style.opacity = "0";
-    items.style.top = "50%";
-  } else {
-    items.style.visibility = "visible";
-    items.style.opacity = "1";
-    items.style.top = "calc(100% + 25px)";
-  }
-};
-
 // From this to this section
 
 let fromIMGFirst = document.getElementById("fromIMGFirst");
@@ -89,6 +74,15 @@ let toIMGSecond = document.getElementById("toIMGSecond");
 let fromIMGThird = document.getElementById("fromIMGThird");
 let toIMGThird = document.getElementById("toIMGThird");
 let titles = document.querySelectorAll(".fromThisToThisHeadline");
+
+if (window.innerWidth <= 550) {
+  fromIMGFirst.src = "../static/images/imgFrom0_1.png";
+  fromIMGSecond.src = "../static/images/imgFrom1_1.png";
+  fromIMGThird.src = "../static/images/imgFrom2_1.png";
+  toIMGFirst.src = "../static/images/imgFrom0_1.png";
+  toIMGSecond.src = "../static/images/imgFrom1_1.png";
+  toIMGThird.src = "../static/images/imgFrom2_1.png";
+}
 
 document.addEventListener("scroll", function () {
   if (isElementInViewport(fromIMGFirst)) {
@@ -100,11 +94,10 @@ document.addEventListener("scroll", function () {
 
 let scrollBox = document.getElementById("scrollBox");
 let paragraph = document.getElementById("textParagraph");
-let scrolled = false;
 
 scrollBox.addEventListener("scroll", function () {
   window.scrollTo({
-    top: 2500,
+    top: scrollBox.offsetTop,
     behavior: "auto",
   });
 
@@ -164,7 +157,8 @@ if (navigator.userAgent.includes("Mozilla") && browserName === "Firefox") {
   if (match) {
     const firefoxVersion = match[1];
     if (firefoxVersion <= 5) {
-      document.getElementById("spaceNeeded").style.height = "500rem";
+      if (window.innerWidth <= 650)
+        document.getElementById("spaceNeeded").style.height = "500rem";
 
       scrollBox.addEventListener("scroll", function () {
         if (this.scrollTop * 1.5 >= this.scrollHeight - window.innerHeight) {
@@ -190,4 +184,4 @@ selectedBTN.onmouseleave = function () {
   if (selectedBTN.classList.contains("reverse"))
     selectedBTN.classList.remove("reverse");
   else selectedBTN.classList.add("reverse");
-}
+};

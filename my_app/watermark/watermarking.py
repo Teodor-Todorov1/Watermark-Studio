@@ -23,11 +23,15 @@ watermarking_bp = Blueprint(
 #Text Watermark
 @watermarking_bp.route('/textWatermark')
 def index():
-    return render_template("watermarking.html")
-
+    if session.get("is_logged_in"):
+        return render_template("watermarking.html")
+    else:
+        return redirect(url_for('registration_bp.login'))
 
 @watermarking_bp.route('/processing', methods=['POST'])
 def process():
+    if not session.get("is_logged_in"):
+        return redirect(url_for('registration_bp.login'))
     try:
         wm = WM(session.get("uid"))
         file = request.files['image']
@@ -52,35 +56,45 @@ def process():
         #    with open(temp_image_path, 'wb') as temp_file:
         #        temp_file.write(buffer.read())
 
-        return render_template('download.html', img_data=data)
+        return render_template('RSHdownload.html', img_data1=data, img_data2=data)
     except Exception as e:
         return render_template('error.html', error=str(e)), 500
 
 @watermarking_bp.route('/download/<filename>')
 def download(filename):
+    if not session.get("is_logged_in"):
+        return redirect(url_for('registration_bp.login'))
     return send_file(filename, as_attachment=True)
 
 
 @watermarking_bp.route('/processingBack', methods=['POST'])
 def processBack():
+    if not session.get("is_logged_in"):
+        return redirect(url_for('registration_bp.login'))
     try:
         wm = WM(session.get("uid"))
         file = request.files['image_back']
 
         with Image.open(file.stream) as img:
-            return wm.decode(img)
+            return render_template("RSHview.html", wm_text = wm.decode(img))
+
     except Exception as e:
         return render_template('error.html', error=str(e)), 500
 
 #Image Watermark
 
 @watermarking_bp.route('/imageWatermark')
-def imqgeIndex():
-    return  render_template("imageWatermarking.html")
+def imageIndex():
+    if session.get("is_logged_in"):
+        return render_template("imageWatermarking.html")
+    else:
+        return redirect(url_for('registration_bp.login'))
 
 # Encryption function
 @watermarking_bp.route('/processingImage', methods=['POST'])
 def encrypt():
+    if not session.get("is_logged_in"):
+        return redirect(url_for('registration_bp.login'))
     try:
         if request.method == 'POST':
             # Read the uploaded images and convert them to NumPy arrays
@@ -104,12 +118,14 @@ def encrypt():
             result_img_bytes = cv2.imencode('.png', img1_np)[1].tobytes()
             data = base64.b64encode(result_img_bytes).decode()
 
-            return f'<img src="data:image/png;base64,{data}">'
+        return render_template('MSBdownload.html', img_data1=data, img_data2=data)
     except Exception as e:
         return render_template('error.html', error=str(e)), 500
 # Decryption function
 @watermarking_bp.route('/processingImageBack', methods=['POST'])
 def decrypt():
+    if not session.get("is_logged_in"):
+        return redirect(url_for('registration_bp.login'))
     try:
         if request.method == 'POST':
             # Read the uploaded image as a base64 encoded string
@@ -141,7 +157,7 @@ def decrypt():
             data1 = base64.b64encode(img1_bytes).decode()
             data2 = base64.b64encode(img2_bytes).decode()
 
-            return (f'<img src="data:image/png;base64,{data1}"'
-                    f'><img src="data:image/png;base64,{data2}">')
+            return render_template('MSBview.html', img1_data=data1, img2_data=data2)
+
     except Exception as e:
         return render_template('error.html', error=str(e)), 500

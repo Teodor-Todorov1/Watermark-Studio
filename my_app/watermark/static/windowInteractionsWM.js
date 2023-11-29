@@ -74,12 +74,26 @@ function scrollFunction() {
 
 
 
-  let loadFile = function(img) {
-    let reader = new FileReader();
-    reader.onload = function(){
-      let output = document.getElementById(img.id+'_preview');
-      output.src = reader.result;
-    };
-    reader.readAsDataURL(img.files[0]);
-  };
+  // Handle underBuild
 
+// let notReadyLinks = document.querySelectorAll(".underBuild");
+// notReadyLinks.forEach((element) => {
+//   element.onclick = function () {
+//     alert("Access error: This page is under construction.");
+//   };
+// });
+
+let createBTN = document.getElementById("dropdown__face");
+let items = document.getElementById("dropdown__items");
+
+createBTN.onclick = function () {
+  if (items.style.opacity === "1") {
+    items.style.visibility = "hidden";
+    items.style.opacity = "0";
+    items.style.top = "50%";
+  } else {
+    items.style.visibility = "visible";
+    items.style.opacity = "1";
+    items.style.top = "calc(100% + 25px)";
+  }
+};

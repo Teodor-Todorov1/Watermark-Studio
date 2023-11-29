@@ -38,9 +38,8 @@ main {
 }
 
 .branding {
-  max-height: 0.2rem;
-  max-width: 90rem;
-  filter: blur(20px);
+  max-width: 80vw;
+  filter: blur(calc(100vw / 30));
   opacity: 0.3;
   position: sticky;
   z-index: -1;
@@ -52,6 +51,7 @@ main {
 
 .subtitle {
   text-shadow: 0 0 25px blue, 0 0 5px darkblue;
+  text-align: center;
 }
 
 .desc {
@@ -65,7 +65,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  top: 5rem;
 }
 
 .landingText_title {
@@ -75,6 +77,7 @@ main {
   animation-iteration-count: 1;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  text-align: center;
 }
 
 .landingText_subtitle {
@@ -145,6 +148,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .videoTutorial {
@@ -177,14 +181,14 @@ button {
 
 .form {
   background-color: #15172b;
-  border-radius: 20px;
+  border-radius: 1.2rem;
   padding: 1rem;
   width: 40%;
   color: white;
 }
 
 .input-container {
-  height: 50px;
+  height: 100%;
   position: relative;
   width: 100%;
   margin-top: 2rem;
@@ -192,11 +196,11 @@ button {
 
 .input {
   background-color: #303245;
-  border-radius: 12px;
+  border-radius: 0.7rem;
   border: 0;
   box-sizing: border-box;
   color: #eee;
-  font-size: 18px;
+  font-size: 1rem;
   outline: 0;
   padding: 0.5rem;
   width: 100%;
@@ -205,8 +209,7 @@ button {
   justify-content: center;
 }
 
-.passCreate,
-.textField {
+.passCreate {
   margin-top: 3rem;
 }
 
@@ -217,13 +220,14 @@ button {
 .cut {
   background-color: #15172b;
   border-radius: 10px;
-  height: 20px;
-  left: 20px;
+  height: 1.4rem;
+  left: 1.4rem;
   position: absolute;
-  top: -20px;
+  top: -1.4rem;
   transform: translateY(0);
   transition: transform 200ms;
   width: 9rem;
+  opacity: 0;
 }
 
 .cut-short {
@@ -232,14 +236,15 @@ button {
 
 .input:focus ~ .cut,
 .input:not(:placeholder-shown) ~ .cut {
-  transform: translateY(8px);
+  transform: translateY(0.6rem);
+  opacity: 1;
 }
 
 .placeholder {
   color: #65657b;
   font-family: sans-serif;
-  left: 20px;
-  line-height: 14px;
+  left: 1.4rem;
+  line-height: 0.8rem;
   pointer-events: none;
   position: absolute;
   transform-origin: 0 50%;
@@ -249,7 +254,7 @@ button {
 
 .input:focus ~ .placeholder,
 .input:not(:placeholder-shown) ~ .placeholder {
-  transform: translateY(-30px) translateX(10px) scale(0.75);
+  transform: translateY(-1.5rem) translateX(0.6rem) scale(0.75);
 }
 
 .input:not(:placeholder-shown) ~ .placeholder {
@@ -262,21 +267,27 @@ button {
 
 .submit {
   background-color: #08d;
-  border-radius: 12px;
+  border-radius: 0.7rem;
   border: 0;
   box-sizing: border-box;
   color: #eee;
   cursor: pointer;
-  font-size: 18px;
-  height: 50px;
-  margin-top: 38px;
+  font-size: 1.3rem;
+  height: 3.5rem;
+  margin-top: 2rem;
   outline: 0;
   text-align: center;
   width: 100%;
+  transition: all 250ms linear;
+}
+
+.submit:hover {
+  background-color: #06b;
+  color: #00eeff;
 }
 
 .submit:active {
-  background-color: #06b;
+  background-color: #000118;
 }
 
 .Forms {
@@ -300,6 +311,7 @@ button {
   justify-content: center;
   align-items: center;
   max-width: 50vw;
+  margin-right: 5rem;
 }
 
 .Forms_insideTitle {
@@ -435,6 +447,67 @@ button {
   animation-fill-mode: forwards;
 }
 
+/* Download page */
+
+.formLarge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 70vw;
+  max-height: 90vh;
+  height: fit-content;
+  padding: 2rem;
+  transform: translateX(150vw);
+  animation-name: formSlide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  box-shadow: 0px 0px 1rem 0.2rem rgba(0, 255, 255, 0.7);
+  transition: all 300ms linear;
+}
+
+.formLarge:hover {
+  box-shadow: 0px 0px 30px 5px rgba(0, 255, 255, 0.7);
+}
+
+.downloadFormBox {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.downloadMain {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.formLarge h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.formLarge img {
+  margin: 0.7rem;
+  max-height: 60vh;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.formLarge a {
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+
+/* Animations */
+
 @keyframes branding {
   0% {
     filter: blur(0px);
@@ -495,6 +568,16 @@ button {
   100% {
     opacity: 1;
     transform: translateY(0rem);
+  }
+}
+
+@keyframes formSlide {
+  70% {
+    transform: translateX(150vw);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
 
