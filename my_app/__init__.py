@@ -15,3 +15,7 @@ sess = Session(app)
 app.register_blueprint(watermarking.watermarking_bp)
 app.register_blueprint(registration.registration_bp)
 app.register_blueprint(core.core_bp)
+registration.oauth.init_app(app)
+
+
+

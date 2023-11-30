@@ -4,11 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="Added session and logout">
-      <change beforePath="$PROJECT_DIR$/.idea/WMproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WMproject.iml" afterDir="false" />
+    <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="Front end and Back end changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/register/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_app/register/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/templates/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/07877232dd0e000227980ebe647e88ba" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/0e57cbf5bcc3599f0c7dc661a112e4eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/17c11f584491b966b82e6ed9ec293449" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/2029240f6d1128be89ddc32729463129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/2bc9c646361c15ae14bd488e4973d1a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/2f82150a836b3f1d20afab94a36c845a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/3e9ca8943802c52dfd37187165fe022f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/46d96ec2273eb93bd6018ca5386b1df7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/47b56500e8f1da0ee7fc1053285ce34f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/50d3f4912cdaabf700149edc8a7aa57b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/5218791bdd0968470b3c01f9fb8c086f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/723bfdc6e9f1982b46089f7cf26e0f3b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/72cdaac86b3924a0611fabc0bbb02459" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/78e4112d5b806d2c53abe4992506a4c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/7be2aaf050b13dfa047f680b5881ec61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/7f4a2d4cdf335b43ebb7fb1b5f0a01c1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/9e5b5f78711d3d936e93ebf446c522b5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/a37ed6aa666b05cbdbb5eaabf2d71d81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/ab31ec103a66fb17596648ab46cc07d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/c7a23126658f230406486f037787d1cd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/c9a7bce6278d11bddb08b9891a3e02f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/e8cb1f0984c0c54a2828484db2e78d86" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_session/f5bea8b0986e919a5b79b72aaa57e204" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/imageWatermarking.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/imageWatermarking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/watermarking.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/watermarking.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +42,7 @@
       <list>
         <option value="Python Script" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,6 +58,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="added_files" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -54,6 +82,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -65,31 +96,36 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/WMproject/my_app/__init__.py&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/WMproject/my_app/register/static&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Confirmation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\WMproject\app" />
+      <recent name="C:\Projects\WMproject\my_app\register\static" />
+      <recent name="C:\Projects\WMproject\my_app\watermark\static" />
+      <recent name="C:\Projects\WMproject\my_app\core\static" />
+      <recent name="C:\Projects\WMproject\my_app\watermark" />
+      <recent name="C:\Projects\WMproject\my_app\core\static\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\WMproject\my_app\core\templates" />
-      <recent name="C:\Projects\WMproject\my_app\register\templates" />
-      <recent name="C:\Projects\WMproject\templates" />
-      <recent name="C:\Projects\WMproject\register" />
-      <recent name="C:\Projects\WMproject\watermark" />
+      <recent name="C:\Projects\WMproject\my_app\core\static" />
+      <recent name="C:\Projects\WMproject\my_app\core\static\images" />
+      <recent name="C:\Projects\WMproject\my_app\watermark\static" />
+      <recent name="C:\Projects\WMproject\my_app\register" />
+      <recent name="C:\Projects\WMproject\my_app\register\static" />
     </key>
   </component>
   <component name="RunManager" selected="Flask server.WMproject">
@@ -116,6 +152,7 @@
       <method v="2" />
     </configuration>
     <configuration name="WMproject" type="Python.FlaskServer">
+      <option name="additionalOptions" value="--host localhost" />
       <module name="WMproject" />
       <option name="target" value="C:\Projects\WMproject\my_app\__init__.py" />
       <option name="targetType" value="PATH" />
@@ -151,7 +188,59 @@
       <workItem from="1693392083019" duration="119000" />
       <workItem from="1693392226899" duration="6023000" />
       <workItem from="1693405392475" duration="88000" />
-      <workItem from="1693406520752" duration="545000" />
+      <workItem from="1693406520752" duration="657000" />
+      <workItem from="1693472907003" duration="295000" />
+      <workItem from="1693473923574" duration="322000" />
+      <workItem from="1693591938862" duration="1978000" />
+      <workItem from="1693670204791" duration="446000" />
+      <workItem from="1693907964563" duration="1000" />
+      <workItem from="1694076855438" duration="2841000" />
+      <workItem from="1694333735891" duration="678000" />
+      <workItem from="1694350654269" duration="6512000" />
+      <workItem from="1694507171502" duration="282000" />
+      <workItem from="1694530168869" duration="2096000" />
+      <workItem from="1694532933541" duration="194000" />
+      <workItem from="1695052954025" duration="2461000" />
+      <workItem from="1695577412383" duration="1295000" />
+      <workItem from="1695579259048" duration="819000" />
+      <workItem from="1695658490036" duration="213000" />
+      <workItem from="1695829690551" duration="2140000" />
+      <workItem from="1695919322997" duration="8880000" />
+      <workItem from="1695960109694" duration="755000" />
+      <workItem from="1695997389721" duration="2759000" />
+      <workItem from="1696002898478" duration="1602000" />
+      <workItem from="1696260254506" duration="100000" />
+      <workItem from="1696261732071" duration="319000" />
+      <workItem from="1696350309319" duration="5145000" />
+      <workItem from="1696424988491" duration="3600000" />
+      <workItem from="1696519122132" duration="3107000" />
+      <workItem from="1696565080536" duration="177000" />
+      <workItem from="1696700139044" duration="378000" />
+      <workItem from="1696952078252" duration="1814000" />
+      <workItem from="1696954206101" duration="95000" />
+      <workItem from="1696996837353" duration="347000" />
+      <workItem from="1697123221012" duration="3053000" />
+      <workItem from="1697134586707" duration="245000" />
+      <workItem from="1699104953246" duration="4359000" />
+      <workItem from="1699384069574" duration="2539000" />
+      <workItem from="1699387070268" duration="4000" />
+      <workItem from="1699387102947" duration="370000" />
+      <workItem from="1699462614481" duration="3860000" />
+      <workItem from="1699466815298" duration="1159000" />
+      <workItem from="1699471659100" duration="141000" />
+      <workItem from="1699722938031" duration="5151000" />
+      <workItem from="1699989953287" duration="3083000" />
+      <workItem from="1700063073192" duration="8721000" />
+      <workItem from="1700135859465" duration="79000" />
+      <workItem from="1700136587675" duration="1923000" />
+      <workItem from="1700160734247" duration="557000" />
+      <workItem from="1700242789381" duration="20585000" />
+      <workItem from="1700592305487" duration="406000" />
+      <workItem from="1700763648212" duration="6571000" />
+      <workItem from="1701009020132" duration="21906000" />
+      <workItem from="1701196180505" duration="4479000" />
+      <workItem from="1701271024052" duration="14491000" />
+      <workItem from="1701331062099" duration="6893000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed registration css">
       <option name="closed" value="true" />
@@ -177,7 +266,103 @@
       <option name="project" value="LOCAL" />
       <updated>1693405075449</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed templates connection bug">
+      <option name="closed" value="true" />
+      <created>1693407158345</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693407158345</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added styling and download functionality">
+      <option name="closed" value="true" />
+      <created>1694530510295</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694530510295</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added needed files">
+      <option name="closed" value="true" />
+      <created>1694531983278</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694531983279</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Watermarking and visual update">
+      <option name="closed" value="true" />
+      <created>1695960862531</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695960862531</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Visual improvement in registration">
+      <option name="closed" value="true" />
+      <created>1696355284640</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696355284640</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Visual improvement in core">
+      <option name="closed" value="true" />
+      <created>1696528340868</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696528340868</updated>
+    </task>
+    <task id="LOCAL-00010" summary="2nd type of watermark">
+      <option name="closed" value="true" />
+      <created>1697128218576</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697128218576</updated>
+    </task>
+    <task id="LOCAL-00011" summary="navbar in watermark part">
+      <option name="closed" value="true" />
+      <created>1699109816388</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699109816388</updated>
+    </task>
+    <task id="LOCAL-00012" summary="front end changes">
+      <option name="closed" value="true" />
+      <created>1699466484399</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699466484399</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added dynamic watermark pass">
+      <option name="closed" value="true" />
+      <created>1699728132193</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699728132193</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Error handling, front end changes and preview">
+      <option name="closed" value="true" />
+      <created>1700074827580</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700074827580</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Front end and Back end changes">
+      <option name="closed" value="true" />
+      <created>1701288370508</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1701288370508</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +379,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -209,17 +394,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed registration css" />
     <MESSAGE value="Added session and logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added session and logout" />
+    <MESSAGE value="Fixed templates connection bug" />
+    <MESSAGE value="Added styling and download functionality" />
+    <MESSAGE value="Added needed files" />
+    <MESSAGE value="Watermarking and visual update" />
+    <MESSAGE value="Visual improvement in registration" />
+    <MESSAGE value="Visual improvement in core" />
+    <MESSAGE value="2nd type of watermark" />
+    <MESSAGE value="navbar in watermark part" />
+    <MESSAGE value="front end changes" />
+    <MESSAGE value="Added dynamic watermark pass" />
+    <MESSAGE value="Error handling, front end changes and preview" />
+    <MESSAGE value="Front end and Back end changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front end and Back end changes" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="Python.FlaskServer">
         <watch expression="err" />
         <watch expression="session" />
+        <watch expression="request" />
+        <watch expression="google" language="Python" />
+        <watch expression="ession['google_token']" />
+        <watch expression="session['google_token']" />
+        <watch expression="session['google_token']" />
+        <watch expression="auth" />
+        <watch expression="jwt" />
+        <watch expression="response" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1693407030483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1701364153890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

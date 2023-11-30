@@ -1,1 +1,1 @@
-# WMproject
+# Watermarking Studio
