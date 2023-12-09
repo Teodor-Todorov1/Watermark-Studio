@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d55dae49-e5ac-4269-86bd-c23ee63e829e" name="Changes" comment="Front end and Back end changes">
+      <change afterPath="$PROJECT_DIR$/my_app/core/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WMproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WMproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/07877232dd0e000227980ebe647e88ba" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/0e57cbf5bcc3599f0c7dc661a112e4eb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/17c11f584491b966b82e6ed9ec293449" beforeDir="false" />
@@ -29,8 +35,38 @@
       <change beforePath="$PROJECT_DIR$/flask_session/c9a7bce6278d11bddb08b9891a3e02f3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/e8cb1f0984c0c54a2828484db2e78d86" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flask_session/f5bea8b0986e919a5b79b72aaa57e204" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/.idea/WMproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/.idea/WMproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/loader.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/loader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/static/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/static/media.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/core/templates/core.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/core/templates/core.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/RegisterMedia.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/static/RegisterMedia.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/static/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/static/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/register/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/register/templates/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/WatermarkingMedia.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/WatermarkingMedia.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/ecc.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/ecc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/static/WatermarkingMedia.css" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/static/WatermarkingMedia.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/static/downloadInteractions.js" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/static/downloadInteractions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/static/windowInteractionsWM.js" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/static/windowInteractionsWM.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/MSBdownload.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/MSBdownload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/MSBview.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/MSBview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/RSHdownload.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/RSHdownload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/RSHview.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/RSHview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/imageWatermarking.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/imageWatermarking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_app/watermark/templates/watermarking.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/templates/watermarking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/watermarking.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/watermarking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_app/watermark/wm_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_app/watermark/wm_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,11 +190,12 @@
     <configuration name="WMproject" type="Python.FlaskServer">
       <option name="additionalOptions" value="--host localhost" />
       <module name="WMproject" />
-      <option name="target" value="C:\Projects\WMproject\my_app\__init__.py" />
+      <option name="target" value="C:\Projects\WMproject\app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="C:\Users\User\AppData\Local\Programs\Python\Python311\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -241,6 +278,7 @@
       <workItem from="1701196180505" duration="4479000" />
       <workItem from="1701271024052" duration="14491000" />
       <workItem from="1701331062099" duration="6893000" />
+      <workItem from="1702134089941" duration="2087000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed registration css">
       <option name="closed" value="true" />
@@ -425,6 +463,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1701364153890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/WMproject$WMproject.coverage" NAME="WMproject Coverage Results" MODIFIED="1702137232938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

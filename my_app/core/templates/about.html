@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="downloadHTML">
-   <head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Download Processed Image</title>
-    <link rel="icon" type="image/x-icon" href="{{ url_for('core_bp.static', filename='images/WM1.ico') }}"/>
+    <title>Home</title>
+      <link rel="icon" type="image/x-icon" href="{{ url_for('core_bp.static', filename='images/WM1.ico') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='reset.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='header.css') }}"/>
       <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='loader.css') }}" />
@@ -26,9 +26,9 @@
       </div>
 
       <div class="navWrap">
-        <a href="/" class="navlink">Home</a>
+        <a href="/" class="navlink ">Home</a>
         <a href="#" class="navlink underBuild">My Profile</a>
-        <a href="/about" class="navlink ">About</a>
+        <a href="/about" class="navlink selectedlink">About</a>
         <a href="#" class="navlink underBuild">Contact us</a>
       </div>
       <div class="sidebar">
@@ -55,31 +55,51 @@
         </div>
       </div>
     </header>
-    <main class="downloadMain">
-      <div class="branding">
-       <img src="{{ url_for('core_bp.static', filename = 'images/WM1.png') }}" alt="LOGO" />
-      </div>
 
-      <section class="downloadFormBox">
-        <div class="form formLarge">
-          <h3>Processed Image</h3>
-          <img
-            id="errorIMG"
-            src="data:image/png;base64,{{img_data1}}"
-            alt="Processed image"
-            onerror="this.style.display='none'"
-          />
-          <span id="errorText" class="errorMessage" style="display: none"
-            ><i class="fa-solid fa-face-frown"></i> Visualizing error: Failed to
-            load image!</span
-          >
-          <a href="data:image/png;base64,{{img_data2}}" download="wm.png">
-            <button class="submit">Download Image</button>
-          </a>
-        </div>
-      </section>
+
+
+  <main style="height: 65vh; padding-left: 40px; padding-right: 40px">
+      <h1 class="navlink selectedlink" style="border-bottom: none">About Us</h1>
+       <div id="mission">
+        <h2>Our Mission</h2>
+        <p>We are passionate students, pursuing our education in the field of applied programming at PMG "Vasil Drumev" in Veliko Tarnovo. Our mission is to develop innovative technologies that enhance data security and provide new ways to transmit confidential information securely.</p>
+    </div>
+
+    <div id="goal">
+        <h2>Our Goal</h2>
+        <p>Our long-term challenge and passionate project involve creating a platform that focuses on data security through an innovative steganography method. We believe in the power of technology to bring about meaningful change and address real-world issues.</p>
+    </div>
+
+    <div>
+        <h2>Our Vision</h2>
+        <p>We aim to provide users with a high level of security and an easy way to transmit confidential information through innovative technologies. We believe that technology can be a powerful tool for change and problem-solving.</p>
+    </div>
+
+    <div>
+        <h2>Our Aspiration</h2>
+        <p>Our aspiration is to create a platform that not only offers effective solutions but also inspires young minds to explore the world of programming and cryptography. We want to establish an educational space where talented students can express and develop their ideas.</p>
+    </div>
+
+    <p>Thank you for being a part of this exciting project. We look forward to inspiring you with our passion and dedication!</p>
+
+
+  </main>
+
+
+      <!-- Background dots -->
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+      <div class="dot3"></div>
+      <div class="dot4"></div>
+      <div class="dot5"></div>
+
+      <!-- return to top button -->
+      <a id="toTopBTN" href="#" class="toTopBTN"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
     </main>
-     <footer class="footer">
+
+   <footer class="footer">
       <div class="logoSection">
         <a class="navlogo footerLogo" href="#">WaterMark Studio</a>
         <span class="rights"
@@ -112,7 +132,8 @@
     <div id="loader" class="lds-hourglass"></div>
     <script src="{{ url_for('core_bp.static', filename='loading.js') }}"></script>
     <script src="{{ url_for('core_bp.static', filename='global.js') }}"></script>
-    <script src="{{ url_for('watermarking_bp.static', filename='downloadInteractions.js') }}"></script>
+    <script src="{{ url_for('core_bp.static', filename='windowInteractions.js') }}"></script>
     <script src="{{ url_for('core_bp.static', filename='header.js') }}"></script>
   </body>
 </html>
+

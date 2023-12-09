@@ -10,7 +10,6 @@
       <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='core.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='global.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='CoreMedia.css') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='RegisterMedia.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('core_bp.static', filename='footer.css') }}"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
   </head>
@@ -28,7 +27,7 @@
       <div class="navWrap">
         <a href="/" class="navlink selectedlink">Home</a>
         <a href="#" class="navlink underBuild">My Profile</a>
-        <a href="#" class="navlink underBuild">About</a>
+        <a href="/about" class="navlink ">About</a>
         <a href="#" class="navlink underBuild">Contact us</a>
       </div>
       <div class="sidebar">
@@ -203,7 +202,7 @@
           <ul class="navlinkwrap">
             <li href="/" class="navlink small">Home</li>
             <li href="#" class="navlink small underBuild">My Profile</li>
-            <li href="#" class="navlink small underBuild">About</li>
+            <li href="#" class="navlink small ">About</li>
             <li href="#" class="navlink small underBuild">Contact us</li>
           </ul>
         </div>
