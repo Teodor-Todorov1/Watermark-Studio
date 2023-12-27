@@ -17,3 +17,11 @@ def about():
         return render_template("about.html")
     else:
         return redirect(url_for('registration_bp.login'))
+
+
+@core_bp.route("/profile")
+def profile():
+    if session.get("is_logged_in"):
+        return render_template("profile.html", email=session.get("email"), name=session.get("name"), profilePicture = session.get("profilePicture"))
+    else:
+        return redirect(url_for('registration_bp.login'))

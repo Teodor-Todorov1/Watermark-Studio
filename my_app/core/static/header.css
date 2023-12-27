@@ -348,27 +348,6 @@ input {
 
 /* Media */
 
-/* TV */
-@media screen and ((min-width: 2000px) or (min-height: 1500px)) {
-  .navlogo {
-    font-size: calc(100vw / 50);
-  }
-
-  .dropdown {
-    scale: 0.8;
-    width: 100%;
-  }
-
-  .dropdown__text {
-    margin-right: calc(100vw / 40);
-  }
-
-  .navlink,
-  .link {
-    font-size: calc(100vw / 100);
-  }
-}
-
 /* Phone */
 @media only screen and (max-width: 600px) {
   .bars {
@@ -398,3 +377,25 @@ input {
     scale: 0.8;
   }
 }
+/* TV */
+@media screen and ((min-width: 2000px) or (min-height: 1500px)) {
+  .navlogo {
+    font-size: calc(100vw / 50);
+  }
+
+  .dropdown {
+    scale: 0.8;
+    width: 100%;
+  }
+
+  .dropdown__text {
+    margin-right: calc(100vw / 40);
+  }
+
+  .navlink,
+  .link {
+    font-size: calc(100vw / 100);
+  }
+}
+
+
