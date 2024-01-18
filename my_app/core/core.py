@@ -18,6 +18,13 @@ def about():
     else:
         return redirect(url_for('registration_bp.login'))
 
+@core_bp.route("/contacts")
+def contacts():
+    if session.get("is_logged_in"):
+        return render_template("contacts.html")
+    else:
+        return redirect(url_for('registration_bp.login'))
+
 
 @core_bp.route("/profile")
 def profile():
