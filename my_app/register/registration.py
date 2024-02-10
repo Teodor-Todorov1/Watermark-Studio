@@ -5,6 +5,8 @@ import json
 import base64
 import re
 import hashlib
+import requests
+
 
 
 def hash_str(str):
@@ -54,7 +56,7 @@ google = oauth.remote_app(
     consumer_key='155695857534-5d9mjnca1vp88q3q7at78nic13cra1lb.apps.googleusercontent.com',
     consumer_secret='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',
     request_token_params={
-        'scope': 'email',
+        'scope': 'email profile',
     },
     base_url='https://www.googleapis.com/oauth2/v1/',
     request_token_url=None,
@@ -89,9 +91,13 @@ def google_authorized():
         )
 
     session['google_token'] = (response['access_token'], '')
-    jwt = response['id_token'].split('.')
+    headers = {
+        'Authorization': 'Bearer ' + session['google_token'][0]}
+    response2 = requests.get('https://www.googleapis.com/oauth2/v1/userinfo', headers=headers)
+    # jwt = response['id_token'].split('.')
 
-    userinfo = json.loads(base64_decode(jwt[1]))
+    # userinfo = json.loads(base64_decode(jwt[1]))
+    userinfo = json.loads(response2.text)
     # print(userinfo)
 
     # Check if the Google user is already registered in the database
@@ -100,17 +106,19 @@ def google_authorized():
 
     if user_data.val():
         # User is already registered, log them in
-        user = user_data.val()
-        user_id, user_info = list(user.items())[0]
-        session["email"] = user_info['email']
-        session["name"] = user_info.get('name', '')
-        session["uid"] = user_id
+
+        session["email"] = email
+        session["name"] = userinfo['name']
+        session["profilePicture"] = userinfo['picture']
+        session["uid"] = userinfo['id']
         session["is_logged_in"] = True
 
         return redirect(url_for('registration_bp.welcome'))
     else:
         session["email"] = email
-        session["uid"] = userinfo['sub']
+        session["uid"] = userinfo['id']
+        session["name"] = userinfo['name']
+        session["profilePicture"] = userinfo['picture']
         session["is_logged_in"] = True
         data = {"email": email}
         db.child("users").child(session["uid"]).set(data)
@@ -137,7 +145,7 @@ def logout():
 @registration_bp.route("/")
 def welcome():
     if session.get("is_logged_in"):
-        return render_template("core.html", email=session.get("email"), name=session.get("name"))
+        return render_template("core.html")
     else:
         return redirect(url_for('registration_bp.login'))
 
@@ -157,6 +165,7 @@ def result():
                 uid = user['localId']
                 session["is_logged_in"] = True
                 session["email"] = email
+                session["profilePicture"] = "/register/static/user.png"
                 session["uid"] = uid
                 user_data = db.child("users").child(uid).get().val()
                 session["name"] = user_data["name"]

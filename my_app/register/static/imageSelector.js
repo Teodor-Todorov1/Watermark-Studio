@@ -17,10 +17,11 @@ if (screenWidth <= 550) {
 } else if (screenWidth > 2000 && screenWidth <= 2700) {
   imagesNeeded = 25;
 } else {
-  imagesNeeded = 31;
+  imagesNeeded = 30;
 }
 
 let allImages = Array.from({ length: 31 }, (_, i) => i);
+
 let imagesSelected = [];
 
 // Shuffle the array
@@ -34,16 +35,15 @@ for (let index = 0; index < imagesNeeded; index++) {
   imagesSelected.push(`img` + allImages[index]);
 }
 
-// Append the images to the HTML
-let grid = document.getElementById(`grid`);
-for (let index = 0; index < imagesNeeded; index++) {
-  let div = document.createElement("div");
-  let img = document.createElement("img");
-  div.className = `item`;
-  img.src = `../static/images/${imagesSelected[index]}.png`;
-  div.appendChild(img);
-  grid.appendChild(div);
-  // let element = document.getElementById(`img` + index);
-  // element.src = `../static/images/${imagesSelected[index]}.png`;
-  // element.style.display = `block`;
+// Apply the images to the HTML
+
+for (let index = 0; index < imagesNeeded; index++)
+  document.getElementById(
+    `img` + index
+  ).src = `../register/static/images/${imagesSelected[index]}.png`;
+
+for (let index = imagesNeeded + 1; index <= 30; index++) {
+  let item = document.getElementById(`img` + index);
+  item.src = `#`;
+  item.style.display = `none`;
 }
