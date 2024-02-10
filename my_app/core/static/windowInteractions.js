@@ -1,3 +1,5 @@
+"use strict";
+
 // show static elements on scroll
 
 let scroll =
@@ -176,12 +178,29 @@ if (navigator.userAgent.includes("Mozilla") && browserName === "Firefox") {
   }
 }
 
-// selected button animation reverse
-
+// selected button animations
 let selectedBTN = document.getElementById("selected");
 
 selectedBTN.onmouseleave = function () {
   if (selectedBTN.classList.contains("reverse"))
     selectedBTN.classList.remove("reverse");
   else selectedBTN.classList.add("reverse");
+};
+
+let optionButtons = document.getElementById("optionButtons");
+
+selectedBTN.onclick = function () {
+  if (optionButtons.classList.contains("active"))
+    optionButtons.classList.remove("active");
+  else optionButtons.classList.add("active");
+};
+
+// explore button functionality
+let exploreBTN = document.getElementById("exploreBTN");
+
+exploreBTN.onclick = function () {
+  window.scrollTo({
+    top: scrollBox.offsetTop,
+    behavior: "auto",
+  });
 };

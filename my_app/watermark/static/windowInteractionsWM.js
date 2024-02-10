@@ -5,17 +5,6 @@ function isElementInViewport(el) {
   return (elProps.top * 4) / 3 < windowHeight && elProps.bottom > 0;
 }
 
-// Symbol counter
-document.addEventListener('DOMContentLoaded', function () {
-        var wmText = document.getElementById('wm_text');
-        var counter = document.getElementById('symbol_counter');
-
-        wmText.addEventListener('input', function () {
-          var symbolCount = wmText.value.length;
-          counter.textContent = symbolCount;
-        });
-      });
-
 let tutorial_subtitle = document.getElementById("tutorial_subtitle");
 let tutorial_desc = document.getElementById("tutorial_desc");
 let videoTutorial = document.getElementById("videoTutorial");
@@ -94,17 +83,17 @@ function scrollFunction() {
 //   };
 // });
 
-// let createBTN = document.getElementById("dropdown__face");
-// let items = document.getElementById("dropdown__items");
-//
-// createBTN.onclick = function () {
-//   if (items.style.opacity === "1") {
-//     items.style.visibility = "hidden";
-//     items.style.opacity = "0";
-//     items.style.top = "50%";
-//   } else {
-//     items.style.visibility = "visible";
-//     items.style.opacity = "1";
-//     items.style.top = "calc(100% + 25px)";
-//   }
-// };
+let createBTN = document.getElementById("dropdown__face");
+let items = document.getElementById("dropdown__items");
+
+createBTN.onclick = function () {
+  if (items.style.opacity === "1") {
+    items.style.visibility = "hidden";
+    items.style.opacity = "0";
+    items.style.top = "50%";
+  } else {
+    items.style.visibility = "visible";
+    items.style.opacity = "1";
+    items.style.top = "calc(100% + 25px)";
+  }
+};
