@@ -1,4 +1,8 @@
+import base64
 import random
+
+import cv2
+import numpy as np
 
 from my_app.watermark import util
 from my_app.watermark.ecc import ReedSolomonCodec, HammingCodec
@@ -81,3 +85,48 @@ class WM(object):
         data = util.bits2bytes(extracted_bin)  # bits2string(extracted_bin)
         dec_rs = self.rs.decode_rs(data)
         return util.bits2string(self.hm.decode_ham(util.bytes2bits(dec_rs)))
+    @staticmethod
+    def stegoImagesEncode(img1_bytes, img2_bytes):
+        img1_np = cv2.imdecode(np.frombuffer(img1_bytes, np.uint8), cv2.IMREAD_UNCHANGED)
+        img2_np = cv2.imdecode(np.frombuffer(img2_bytes, np.uint8), cv2.IMREAD_UNCHANGED)
+
+        for i in range(img2_np.shape[0]):
+            for j in range(img2_np.shape[1]):
+                for l in range(3):
+                    v1 = format(img1_np[i][j][l], '08b')
+                    v2 = format(img2_np[i][j][l], '08b')
+
+                    v3 = v1[:4] + v2[:4]
+
+                    img1_np[i][j][l] = int(v3, 2)
+
+        # Encode the result image to base64 and return it
+        result_img_bytes = cv2.imencode('.png', img1_np)[1].tobytes()
+        return base64.b64encode(result_img_bytes).decode()
+
+    @staticmethod
+    def stegoImagesDecode(img_base64):
+        img = cv2.imdecode(np.frombuffer(img_base64, np.uint8), cv2.IMREAD_UNCHANGED)
+        # Perform the decryption on the uploaded image
+        width = img.shape[0]
+        height = img.shape[1]
+        img1 = np.zeros((width, height, 3), np.uint8)
+        img2 = np.zeros((width, height, 3), np.uint8)
+
+        for i in range(width):
+            for j in range(height):
+                for l in range(3):
+                    v1 = format(img[i][j][l], '08b')
+                    v2 = v1[:4] + chr(random.randint(0, 1) + 48) * 4
+                    v3 = v1[4:] + chr(random.randint(0, 1) + 48) * 4
+
+                    # Appending data to img1 and img2
+                    img1[i][j][l] = int(v2, 2)
+                    img2[i][j][l] = int(v3, 2)
+
+        # Return the decrypted images as separate image responses
+        img1_bytes = cv2.imencode('.png', img1)[1].tobytes()
+        img2_bytes = cv2.imencode('.png', img2)[1].tobytes()
+        data1 = base64.b64encode(img1_bytes).decode()
+        data2 = base64.b64encode(img2_bytes).decode()
+        return data1, data2
