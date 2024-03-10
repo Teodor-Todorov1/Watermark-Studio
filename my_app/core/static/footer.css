@@ -1,11 +1,16 @@
-@font-face {
-  font-family: Poppins;
-  src: url(Poppins/Poppins-Bold.ttf);
-}
+/*@font-face {*/
+/*  font-family: Poppins;*/
+/*  src: url(Poppins/Poppins-Bold.ttf);*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: Playfair_Display;*/
+/*  src: url(Playfair_Display/PlayfairDisplay-BoldItalic.ttf);*/
+/*}*/
 
 @font-face {
-  font-family: Playfair_Display;
-  src: url(Playfair_Display/PlayfairDisplay-BoldItalic.ttf);
+  font-family: Comfortaa;
+  src: url( https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap);
 }
 
 .footer {
@@ -46,7 +51,7 @@
 }
 
 .footerTitle {
-  font-family: Poppins;
+  font-family: Comfortaa;
   margin: 0 0 0.5rem 0;
   font-size: 1.7rem;
   width: 100%;

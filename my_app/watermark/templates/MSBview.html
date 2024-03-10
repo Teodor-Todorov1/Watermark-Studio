@@ -1,6 +1,6 @@
 {% extends 'base_wm.html' %}
 {% set downloadClass = "downloadHTML" %}
-{% set title = 'View Processed Images' %}
+{% set title = 'Преглед на извлечените изображения' %}
 {% block css %}
 
 {% endblock %}
@@ -13,25 +13,25 @@
 
       <section class="downloadFormBox">
         <div class="form formLarge">
-          <h3>Processed Images</h3>
+          <h3>Извлечени изображения</h3>
           <img
 
             id="errorIMG"
             src="data:image/png;base64,{{img1_data}}"
-            alt="Processed Image1"
+            alt="Извлечено изображение 1"
             onerror="this.style.display='none'"
             style="max-height: 30vh"
           />
           <img
             id="errorIMG"
             src="data:image/png;base64,{{img2_data}}"
-            alt="Processed Image2"
+            alt="Извлечено изображение 2"
             onerror="this.style.display='none'"
             style="max-height: 30vh"
           />
           <span id="errorText" class="errorMessage" style="display: none"
-            ><i class="fa-solid fa-face-frown"></i> Visualizing error: Failed to
-            load images!</span
+            ><i class="fa-solid fa-face-frown"></i> Грешка при визуализиране: Неуспешно
+             зареждане на изображения!</span
           >
         </div>
       </section>

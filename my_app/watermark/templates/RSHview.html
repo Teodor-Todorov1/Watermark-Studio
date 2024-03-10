@@ -1,6 +1,6 @@
 {% extends 'base_wm.html' %}
 {% set downloadClass = "downloadHTML" %}
-{% set title = 'View Processed Image' %}
+{% set title = 'Преглед на обработеното изображение' %}
 {% block css %}
 
 {% endblock %}
@@ -13,12 +13,12 @@
 
       <section class="downloadFormBox">
         <div class="form formLarge">
-          <h3>Extracted Text</h3>
+          <h3>Извлечен текст</h3>
 
           <p onerror="this.style.display='none'">{{ wm_text }}</p>
           <span id="errorText" class="errorMessage" style="display: none"
-            ><i class="fa-solid fa-face-frown"></i> Visualizing error: Failed to
-            load text!</span
+            ><i class="fa-solid fa-face-frown"></i> Грешка при визуализиране: Неуспешно
+             зареждане на текст!</span
           >
         </div>
       </section>

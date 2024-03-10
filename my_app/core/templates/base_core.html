@@ -25,16 +25,16 @@
       </div>
 
       <div class="navWrap">
-        <a href="/" class="navlink {{ 'selectedlink' if params['active'] == 1 else ''}}">Home</a>
-        <a href="/profile" class="navlink {{ 'selectedlink' if params['active'] == 2 else ''}}">My Profile</a>
-        <a href="/about" class="navlink {{ 'selectedlink' if params['active'] == 3 else ''}} ">About</a>
-        <a href="/contacts" class="navlink {{ 'selectedlink' if params['active'] == 4 else ''}}">Contact us</a>
+        <a href="/" class="navlink {{ 'selectedlink' if params['active'] == 1 else ''}}">Начало</a>
+        <a href="/profile" class="navlink {{ 'selectedlink' if params['active'] == 2 else ''}}">Профил</a>
+        <a href="/about" class="navlink {{ 'selectedlink' if params['active'] == 3 else ''}} ">За нас</a>
+        <a href="/contacts" class="navlink {{ 'selectedlink' if params['active'] == 4 else ''}}">Контакти</a>
       </div>
       <div class="sidebar">
         <div class="dropdown">
           <label id="dropdown__face" class="dropdown__face" for="dropdown">
             <div class="buttonwrap">
-              <span class="dropdown__text navlogo">CREATE </span>
+              <span class="dropdown__text navlogo">СЪЗДАЙ </span>
               <i class="fa-solid fa-chevron-down"></i>
             </div>
           </label>
@@ -48,8 +48,8 @@
         </div>
         <div class="logoutContainer">
           <a class="link" href="{{ url_for('registration_bp.logout') }}">
-            <span class="link--top">Logout</span>
-            <span class="link--bottom">Logout</span>
+            <span class="link--top">Изход</span>
+            <span class="link--bottom">Изход</span>
           </a>
         </div>
       </div>
@@ -78,17 +78,17 @@
 
       <div class="footerLinks">
         <div class="footerGroup">
-          <p class="footerTitle">Pages</p>
+          <p class="footerTitle">Страници</p>
           <ul class="navlinkwrap">
-            <li> <a href="/" class="navlink small">Home</a></li>
-            <li> <a href="/profile" class="navlink small ">My Profile</a></li>
-            <li> <a href="/about" class="navlink small ">About</a></li>
-             <li> <a href="/contacts" class="navlink small">Contact us</a></li>
+            <li> <a href="/" class="navlink small">Начало</a></li>
+            <li> <a href="/profile" class="navlink small ">Профил</a></li>
+            <li> <a href="/about" class="navlink small ">За нас</a></li>
+             <li> <a href="/contacts" class="navlink small">Контакти</a></li>
           </ul>
         </div>
 
         <div class="footerGroup">
-          <p class="footerTitle">Media</p>
+          <p class="footerTitle">Социални мрежи</p>
           <ul class="navlinkwrap">
               <li> <a  href="https://www.facebook.com/profile.php?id=61555144664420" class="navlink small" target="_blank">Facebook</a></li>
             <li> <a  href="https://www.instagram.com/wmarkstudio" class="navlink small" target="_blank">Instagram</a></li>

@@ -1,7 +1,7 @@
 {% extends 'base_core.html' %}
 
 {% set params = {
-    'title'   : 'My Profile',
+    'title'   : 'Профил',
     'active'  : 2
 } %}
 {% block css %}
@@ -11,19 +11,19 @@
 
     <section style="height: 70vh">
         <header class="profile-section">
-            <h2>About Me</h2>
+            <h2>За мен</h2>
         </header>
         <section style="display: flex; gap: 15px">
             <section class="profile-section">
-                <h2>Profile Picture</h2>
+                <h2>Профилна снимка</h2>
                  <img src="{{profilePicture }}" id="icon" alt="User Icon" />
             </section>
 
             <section class="profile-section">
-                <h2>Contact Information</h2>
+                <h2>Информация за мен</h2>
                 <div class="contact-info">
-                    <p>Email: {{ email }}</p>
-                     <p>Name: {{ name }}</p>
+                    <p>Имейл: {{ email }}</p>
+                     <p>Име: {{ name }}</p>
                 </div>
             </section>
         </section>

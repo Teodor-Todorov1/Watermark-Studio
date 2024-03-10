@@ -5,7 +5,7 @@ import random
 from reedsolo import RSCodec, ReedSolomonError
 from flask import Blueprint, flash, redirect, render_template, request, session, url_for, Flask, jsonify, send_file
 
-from my_app.watermark.wm_class import WM
+from my_app.watermark.wm_class import WM, WMTypes
 from flask import session
 
 
@@ -31,10 +31,10 @@ def process():
     if not session.get("is_logged_in"):
         return redirect(url_for('registration_bp.login'))
     try:
-        wm = WM(session.get("uid"))
+        wm = WM(session.get("uid"), WMTypes(int(request.form['wm_type'])))
         file = request.files['image']
         with Image.open(file.stream) as img:
-            wm.encode(img, request.form['wm_text'])
+            img = wm.encode(img, request.form['wm_text'])
         buffer = io.BytesIO()
         img.save(buffer, 'png')
         buffer.seek(0)
@@ -70,7 +70,7 @@ def processBack():
     if not session.get("is_logged_in"):
         return redirect(url_for('registration_bp.login'))
     try:
-        wm = WM(session.get("uid"))
+        wm = WM(session.get("uid"), WMTypes(int(request.form['wm_type'])))
         file = request.files['image_back']
 
         with Image.open(file.stream) as img:

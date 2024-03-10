@@ -105,14 +105,14 @@ scrollBox.addEventListener("scroll", function () {
     fromIMGThird.classList.add("onscreen");
     toIMGThird.classList.add("onscreen");
     paragraph.innerText =
-      "Stealth Branding: Keep your brand intact without compromising aesthetics. Your invisible watermark remains hidden, yet it speaks volumes about your ownership.";
+      "Запазете вашата марка непокътната, без да правите компромис с естетиката. Вашият невидим воден знак остава скрит, но той говори много за Вашата собственост.";
   } else if (this.scrollTop * 3 >= this.scrollHeight - window.innerHeight) {
     fromIMGSecond.classList.add("onscreen");
     toIMGSecond.classList.add("onscreen");
     fromIMGThird.classList.remove("onscreen");
     toIMGThird.classList.remove("onscreen");
     paragraph.innerText =
-      "Zero Distraction: Unlike traditional watermarks, invisible watermarks don't interfere with the visual impact of your images. They're there when you need them, and invisible when you don't.";
+      "За разлика от традиционните водни знаци, невидимите водни знаци не пречат на визуалното въздействие на Вашите изображения. Те са там, когато имате нужда от тях, и невидими, когато нямате нужда.";
   } else if (
     this.scrollTop * 3 < this.scrollHeight - window.innerHeight &&
     this.scrollTop * 10 >= this.scrollHeight - window.innerHeight
@@ -120,10 +120,10 @@ scrollBox.addEventListener("scroll", function () {
     fromIMGSecond.classList.remove("onscreen");
     toIMGSecond.classList.remove("onscreen");
     paragraph.innerText =
-      "Invincible Protection: Our cutting-edge technology embeds invisible watermarks within your images, making them virtually tamper-proof. Your images remain pristine while your rights stay safeguarded.";
+      "Нашата  технология вгражда невидими водни знаци във вашите изображения, което ги прави практически защитени от подправяне. Вашите изображения остават непроменени, докато правата Ви остават защитени.";
   } else {
     paragraph.innerText =
-      "Discover the power while scrolling in this section...";
+      "Открийте силата, докато скролирате в тази секция...";
   }
 });
 

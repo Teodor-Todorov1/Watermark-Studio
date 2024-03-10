@@ -15,11 +15,11 @@
       <div id="formContent">
         <!-- Tabs Titles -->
           {% if params['active'] == 1: %}
-            <h2 class="active">Sign In</h2>
-            <a href="/signup"><h2 class="inactive underlineHover">Sign Up</h2></a>
+            <h2 class="active">Вход</h2>
+            <a href="/signup"><h2 class="inactive underlineHover">Регистрация</h2></a>
             {% else %}
-            <a href="/login"><h2 class="inactive underlineHover">Sign In</h2></a>
-            <h2 class="active">Sign Up</h2>%}
+            <a href="/login"><h2 class="inactive underlineHover">Вход</h2></a>
+            <h2 class="active">Регистрация</h2>%}
             {% endif %}
 
         <!-- Icon -->
@@ -43,7 +43,7 @@
               autocomplete="email"
               />
               <div class="cut cut-short"></div>
-              <label class="placeholder" for="email">Email</label>
+              <label class="placeholder" for="email">Имейл</label>
             </div>
             <div class="input-container">
               <input
@@ -56,16 +56,16 @@
               autocomplete="new-password"
               />
               <div class="cut"></div>
-              <label class="placeholder" for="password">Password</label>
+              <label class="placeholder" for="password">Парола</label>
             </div>
           </div>
-          <input type="submit" class="submit fadeIn fourth" value="Sign Up" />
+          <input type="submit" class="submit fadeIn fourth" value="Вход" />
 
            <!-- Google Registration Button -->
           <div class="google_button_container" style="margin-bottom: 20px">
             <a href="/login/google" class="google_button submit fadeIn fourth">
               <img src="{{ url_for('registration_bp.static', filename = 'google_logo.png') }}" alt="google logo">
-                Sign up with Google
+                Вход с Google
             </a>
           </div>
              </form>

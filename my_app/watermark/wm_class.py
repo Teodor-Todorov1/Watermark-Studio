@@ -1,22 +1,32 @@
 import base64
 import random
-
 import cv2
 import numpy as np
+from imwatermark import WatermarkEncoder
+from imwatermark import WatermarkDecoder
+from PIL import Image
 
 from my_app.watermark import util
 from my_app.watermark.ecc import ReedSolomonCodec, HammingCodec
+from enum import Enum
 
+ECC = True
+
+
+class WMTypes(Enum):
+    LSB = 1
+    DWT_DCT = 2
 
 
 class WM(object):
 
-    def __init__(self, uid):
+    def __init__(self, uid, wm_type=WMTypes.LSB):
         self.hm = HammingCodec()
         self.rs = ReedSolomonCodec()
         self.password = uid
-        self.wm_len = 85
-
+        self.wm_type = wm_type
+        self.wm_len = 40
+        self.wm_ecc_len = 85
 
     def generate_wm_positions(self, rows, columns):
         pos_arr = [[] for i in range(rows + columns - 1)]
@@ -35,11 +45,56 @@ class WM(object):
         return pos_arr
 
     def encode(self, img, wm_text):
-        i = 0
-        wm_text = wm_text.rjust(40)
-        e_ham = self.hm.encode_ham_chunk(wm_text)
-        enc_str = self.rs.encode_rs(e_ham)
-        wm = util.bytes2bits(enc_str)  # string2bits(str(encStr)) #"011011000110010101100100011001110110010101110010"
+        match self.wm_type:
+            case WMTypes.DWT_DCT:
+                return self.DWT_DCT_encode(img, wm_text)
+            case default:
+                return self.LSB_encode(img, wm_text)
+
+    def decode(self, img):
+        match self.wm_type:
+            case WMTypes.DWT_DCT:
+                return self.DWT_DCT_decode(img)
+            case default:
+                return self.LSB_decode(img)
+
+    def DWT_DCT_encode(self, img, wm_text):
+        encoder = WatermarkEncoder()
+
+        if ECC:
+            wm_text = wm_text.ljust(self.wm_len)
+            e_ham = self.hm.encode_ham_chunk(wm_text)
+            enc_str = self.rs.encode_rs(e_ham)
+            wm = enc_str
+        else:
+            wm_text = wm_text.ljust(self.wm_ecc_len)
+            wm = wm_text.encode('utf-8')
+
+        encoder.set_watermark('bytes', wm)
+        return Image.fromarray(cv2.cvtColor(encoder.encode(cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR), 'dwtDctSvd'),
+                                            cv2.COLOR_BGR2RGB))
+
+    def DWT_DCT_decode(self, img):
+        decoder = WatermarkDecoder('bytes', 8 * self.wm_ecc_len)
+        extracted_bin = decoder.decode(cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR), 'dwtDctSvd')
+
+        if ECC:
+            dec_rs = self.rs.decode_rs(extracted_bin)
+            res = util.bits2string(self.hm.decode_ham(util.bytes2bits(dec_rs)))
+        else:
+            res = extracted_bin.decode('utf-8')
+
+        return res
+
+    def LSB_encode(self, img, wm_text):
+        if ECC:
+            wm_text = wm_text.ljust(self.wm_len)
+            e_ham = self.hm.encode_ham_chunk(wm_text)
+            enc_str = self.rs.encode_rs(e_ham)
+            wm = util.bytes2bits(enc_str)
+        else:
+            wm_text = wm_text.ljust(self.wm_ecc_len)
+            wm = util.string2bits(str(wm_text))  # util.bytes2bits(enc_str)
 
         random.seed(self.password)  # set the seed
         width, height = img.size
@@ -58,8 +113,9 @@ class WM(object):
                     pixel[n] = pixel[n] & ~3 | int(wm[used_bits]) << 1 | int(wm[used_bits + 1])
                     used_bits += 2
             img.putpixel((x, y), tuple(pixel))
+        return img
 
-    def decode(self, img):
+    def LSB_decode(self, img):
 
         extracted_bin = []
         c = ''
@@ -67,7 +123,7 @@ class WM(object):
         width, height = img.size
         lst_x = list(range(width))
         lst_y = list(range(height))
-        num_bytes = 8 * self.wm_len // 4
+        num_bytes = 8 * self.wm_ecc_len // 4
         used_bits = 0
         for i in range(0, num_bytes):
             x = random.sample(lst_x, 1)[0]
@@ -75,16 +131,21 @@ class WM(object):
             # print([x, y])
             pixel = list(img.getpixel((x, y)))
             for n in range(0, 3, 2):
-                if used_bits < 8 * self.wm_len:
+                if used_bits < 8 * self.wm_ecc_len:
                     c = "".join([c, str((pixel[n] & 2) >> 1), str(pixel[n] & 1)])
                     used_bits += 2
                     if used_bits % 8 == 0:
                         extracted_bin.append(c)
                         c = ''
+        if ECC:
+            data = util.bits2bytes(extracted_bin)
+            dec_rs = self.rs.decode_rs(data)
+            res = util.bits2string(self.hm.decode_ham(util.bytes2bits(dec_rs)))
+        else:
+            res = util.bits2string(extracted_bin)
 
-        data = util.bits2bytes(extracted_bin)  # bits2string(extracted_bin)
-        dec_rs = self.rs.decode_rs(data)
-        return util.bits2string(self.hm.decode_ham(util.bytes2bits(dec_rs)))
+        return res
+
     @staticmethod
     def stegoImagesEncode(img1_bytes, img2_bytes):
         img1_np = cv2.imdecode(np.frombuffer(img1_bytes, np.uint8), cv2.IMREAD_UNCHANGED)

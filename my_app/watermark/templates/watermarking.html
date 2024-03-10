@@ -18,15 +18,15 @@
       <section class="landingText">
         <h1 class="landingText_title navlogo">RSH Mark</h1>
         <h2 class="landingText_subtitle subtitle">
-          /ReedSolomon-Hamming Mark/
+          /Рийд-Соломон-Хеминг  воден знак/
         </h2>
         <p class="landingText_desc desc">
-          Discover our Image Security Suite – effortlessly encrypt and decrypt
-          images with concealed text seamlessly embedded. Our cutting-edge
-          technology ensures robust encryption while preserving authenticity
-          through subtle, text-within-image watermarks. Elevate your digital
-          security in just a few clicks, seamlessly blending protection with
-          aesthetic finesse.
+          Открийте нашия пакет за подписване на изображения  – вграждайте и извличайте без усилие
+           вграден скрит текст в изображения. Нашата авангардна
+           технология осигурява сигурно подписване, като същевременно запазва автентичността
+           чрез фини водни знаци с текст в изображение. Повишете дигиталното си ниво
+           на сигурност само с няколко щраквания, съчетавайки безпроблемно защитата с
+           естетически финес.
         </p>
       </section>
 
@@ -34,13 +34,13 @@
 
       <section class="tutorial">
         <h2 id="tutorial_subtitle" class="tutorial_subtitle subtitle">
-          Watch the tutorial
+         Гледайте урока
         </h2>
         <p id="tutorial_desc" class="tutorial_desc desc">
-          Unlock the full potential of your RSH Mark experience with our
-          comprehensive tutorial videos. Whether you're a seasoned user or a
-          newcomer, our step-by-step guides will empower you to navigate the
-          intricacies of our site effortlessly.
+          Отключете пълния потенциал на вашето изживяване с RSH Mark, с нашите
+           изчерпателни видеоуроци. Независимо дали сте опитен потребител или
+           начинаещ, нашите ръководства стъпка по стъпка ще ви дадат възможност да се ориентирате в
+           тънкостите на нашия сайт без усилие.
         </p>
 
         <iframe
@@ -57,33 +57,32 @@
       <!-- Encrypt form -->
 
       <section class="Forms Forms1">
-        <h2 id="Forms_title" class="Forms_subtitle subtitle">Embed</h2>
+        <h2 id="Forms_title" class="Forms_subtitle subtitle">Вграждане</h2>
         <section class="Forms_content">
           <article class="Forms_desc">
             <h3 id="Forms_subtitle1" class="Forms_insideTitle subtitle">
-              Step 1: Select Your Base Image
+             Стъпка 1: Изберете вашето основно изображени
             </h3>
             <p id="Forms_desc1">
-              Begin by choosing the image you want to use as the foundation for
-              your encrypted masterpiece.
+            Започнете, като изберете изображението, което искате да използвате като основа на
+               вашието подписано изображение.
             </p>
             <h3 id="Forms_subtitle2" class="Forms_insideTitle subtitle">
-              Step 2: Write Your Secret Text
+             Стъпка 2: Напишете своя таен текст
             </h3>
             <p id="Forms_desc2">
-              Next, type the text you wish to encrypt within the base image.
-              This could be your brand name, your name, or any written content
-              you want to keep securely hidden.
+              След това въведете текста, който искате да вградите в основното изображение.
+               Това може да е името на вашата марка, вашето име или друго писмено съдържание, което
+               искате да запазите надеждно скрито.
             </p>
 
             <h3 id="Forms_subtitle3" class="Forms_insideTitle subtitle">
-              Step 3: Generate Your Encrypted Image
+              Стъпка 3: Генерирайте вашето подписано изображение
             </h3>
             <p id="Forms_desc3">
-              Once satisfied with your settings, hit the "Encrypt" button. Watch
-              as ReedSolomon-Hamming Mark seamlessly combines your base and
-              secret image and text, creating a visually indistinguishable
-              encrypted image.
+            След като сте доволни от настройките си, натиснете бутона „Вграждане“. ReedSolomon-Hamming воден знак съчетава безпроблемно вашето базово изображение и
+               тайния текст, създавайки визуално неразличимо
+               подписано изображение.
             </p>
           </article>
 
@@ -95,10 +94,20 @@
             enctype="multipart/form-data"
           >
             <div class="input-container">
-              Image:
+              Изображение:
               <input class="input" type="file" name="image" />
             </div>
-
+            <div class="input-container">
+                  Тип:
+                   <select class="input"
+                  name="wm_type"
+                  id="wm_type"
+                  placeholder=" "
+                    >
+                    <option value="1">LSB</option>
+                    <option value="2">DWT-DCT</option>
+                   </select>
+              </div>
             <div class="textField">
               <div class="input-container">
                 <input maxlength="40"
@@ -109,11 +118,11 @@
                   placeholder=" "
                 />
                 <div class="cut cut-short"></div>
-                <label class="placeholder" for="wm_text">Text:</label>
-                  <span id="symbol_counter">0</span>/40 symbols
+                <label class="placeholder" for="wm_text">Текст:</label>
+                  <span id="symbol_counter">0</span>/40 символа
               </div>
             </div>
-            <button class="submit" type="submit">Encrypt</button>
+            <button class="submit" type="submit">Вграждане</button>
           </form>
         </section>
       </section>
@@ -121,24 +130,24 @@
       <!-- Decrypt form -->
 
       <section class="Forms short">
-        <h2 id="Forms2_title" class="Forms_subtitle subtitle">Extract</h2>
+        <h2 id="Forms2_title" class="Forms_subtitle subtitle">Извличане</h2>
         <section class="Forms_content">
           <article class="Forms_desc">
             <h3 id="Forms2_subtitle1" class="Forms_insideTitle subtitle">
-              Step 1: Upload the encrypted image
+             Стъпка 1: Качете подписано изображение
             </h3>
             <p id="Forms2_desc1">
-              Start with the uploading of the encrypted image that you wish to
-              unveil. This is the image you previously created through our
-              encryption studio.
+             Започнете с качването на подписаното изображение, от което желаете
+               да извлечете скрита информация. Това е изображението, което сте създали преди това чрез нашето
+               студио за подписване.
             </p>
             <h3 id="Forms2_subtitle2" class="Forms_insideTitle subtitle">
-              Step 2: Initiate Decryption
+              Стъпка 2: Започнете извличането
             </h3>
             <p id="Forms2_desc2">
-              Click on the "Decrypt" button to initiate the decryption process.
-              WaterMark Studio will seamlessly extract the concealed text from
-              within the encrypted file, restoring it to its original form.
+              Натиснете бутона "Извличане", за да започнете процеса на извличането.
+               WaterMark Studio ще извлече безпроблемно скрития текст от
+                подписания файл, като го възстановява в оригиналната му форма.
             </p>
           </article>
 
@@ -150,7 +159,7 @@
             enctype="multipart/form-data"
           >
             <div class="input-container">
-              Image:
+              Изображение:
               <input
                 class="input"
                 type="file"
@@ -158,7 +167,18 @@
                 id="image_back"
               />
             </div>
-            <button class="submit" type="submit">Decrypt</button>
+              <div class="input-container">
+                  Тип:
+                   <select class="input"
+                  name="wm_type"
+                  id="wm_type"
+                  placeholder=" "
+                    >
+                    <option value="1">LSB</option>
+                    <option value="2">DWT-DCT</option>
+                   </select>
+              </div>
+            <button class="submit" type="submit">Извличане</button>
           </form>
         </section>
       </section>

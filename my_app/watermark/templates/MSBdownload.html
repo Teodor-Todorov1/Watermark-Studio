@@ -1,6 +1,6 @@
 {% extends 'base_wm.html' %}
 {% set downloadClass = "downloadHTML" %}
-{% set title = 'Download Processed Image' %}
+{% set title = 'Изтегляне на извлечените изображения' %}
 {% block css %}
 
 {% endblock %}
@@ -12,7 +12,7 @@
       </div>
       <section class="downloadFormBox">
         <div class="form formLarge">
-          <h3>Processed Image</h3>
+          <h3>Подписано изображение</h3>
           <img
             id="errorIMG"
             src="data:image/png;base64,{{img_data}}"
@@ -20,11 +20,11 @@
             onerror="this.style.display='none'"
           />
           <span id="errorText" class="errorMessage" style="display: none"
-            ><i class="fa-solid fa-face-frown"></i> Visualizing error: Failed to
-            load image!</span
+            ><i class="fa-solid fa-face-frown"></i> Грешка при визуализиране: Неуспешно
+             зареждане на изображение</span
           >
           <a href="data:image/png;base64,{{img_data}}" download="wm.png">
-            <button class="submit">Download Image</button>
+            <button class="submit">Изтегляне на изображение</button>
           </a>
         </div>
       </section>

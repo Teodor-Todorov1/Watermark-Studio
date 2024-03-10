@@ -1,17 +1,23 @@
 @font-face {
-  font-family: Poppins;
-  src: url(Poppins/Poppins-Bold.ttf);
+  font-family: Comfortaa;
+  src: url( https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap);
 }
 
-@font-face {
-  font-family: Poppins-regular;
-  src: url(Poppins/Poppins-Regular.ttf);
-}
 
-@font-face {
-  font-family: Playfair_Display;
-  src: url(Playfair_Display/PlayfairDisplay-BoldItalic.ttf);
-}
+/*@font-face {*/
+/*  font-family: Poppins;*/
+/*  src: url(Poppins/Poppins-Bold.ttf);*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: Poppins-regular;*/
+/*  src: url(Poppins/Poppins-Regular.ttf);*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: Playfair_Display;*/
+/*  src: url(Playfair_Display/PlayfairDisplay-BoldItalic.ttf);*/
+/*}*/
 
 *,
 *::before,
@@ -22,7 +28,8 @@
 html {
   width: 100vw;
   height: 100vh;
-  font-family: Poppins;
+  font-family: Comfortaa;
+  font-weight: 500;
   font-size: 100%;
 }
 
@@ -83,7 +90,7 @@ main {
 }
 
 .title {
-  font-family: Poppins;
+  font-family: Comfortaa;
   font-weight: 600;
   font-size: 3rem;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -91,7 +98,7 @@ main {
 }
 
 .subtitle {
-  font-family: Poppins;
+  font-family: Comfortaa;
   font-weight: 300;
   font-style: italic;
   font-size: 1.5em;
@@ -100,7 +107,7 @@ main {
 }
 
 .text {
-  font-family: Poppins;
+  font-family: Comfortaa;
   font-weight: 100;
   font-size: 1em;
   margin-top: -0.8em;
@@ -185,7 +192,7 @@ main {
 
 .infobox-createbtn,
 .infobox-explorebtn {
-  font-family: "Poppins";
+  font-family: "Comfortaa";
   font-style: normal;
   font-size: 1.2rem;
   letter-spacing: -1px;
@@ -270,7 +277,7 @@ main {
   margin: 0;
   margin-top: 1rem;
   text-align: center;
-  font-family: "Poppins";
+  font-family: "Comfortaa";
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -414,7 +421,7 @@ p {
 
 .fromThisToThisHeadline {
   font-size: 3rem;
-  font-family: Poppins;
+  font-family: Comfortaa;
   margin-bottom: 1.5rem;
   transform: translate(5vw, 10vh);
   opacity: 0;
