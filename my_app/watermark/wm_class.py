@@ -2,8 +2,8 @@ import base64
 import random
 import cv2
 import numpy as np
-from imwatermark import WatermarkEncoder
-from imwatermark import WatermarkDecoder
+from my_app.watermark.imwatermark.watermark import WatermarkEncoder
+from my_app.watermark.imwatermark.watermark import WatermarkDecoder
 from PIL import Image
 
 from my_app.watermark import util
