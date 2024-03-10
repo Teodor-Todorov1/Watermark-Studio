@@ -79,8 +79,10 @@ The RSH (Reed-Solomon-Hamming Mark) module provides a robust method for embeddin
 4. **Bit Conversion:**
    - The resulting byte sequence is converted back to bits.
 
-5. **Embedding Process:**
-   - Random positions are chosen to embed bits by altering specific color components (red, blue) of the image. Notably, no bits are embedded in the green component as it is the most visible to the human eye.
+5. **Embedding Algorithm Options:**
+   - **LSB** (Least Significant Bit): Embed bits by altering specific color components (red, blue) of the image, using a pseudo-random number generator initialized with a personalized password. The 2 youngest bits per color component are used. No bits are embedded in the green component for no visual changes.
+  
+   - **DWT-DCT** (Discrete Wavelet Transform - Discrete Cosine Transform): Decompose image into LL, LH, HL, HH sub-regions using DWT, apply DCT to each block, embed bits in maximum non-trivial DCT coefficients, then apply IDCT and IDWT.
 
 ### Extraction of Text Digital Watermark
 
